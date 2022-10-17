@@ -1,5 +1,19 @@
+import { useState } from "react";
 import styles from "./Navbar.module.sass";
 
 export default function Navbar() {
-  return <nav className={styles.nav}></nav>;
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  return (
+    <nav className={styles.nav}>
+      <button onClick={() => setMenuIsOpen(!menuIsOpen)} className={styles.hamburgerButton}>
+        <div className={styles.barsContainer}>
+          <div className={styles.hamburgerBar}></div>
+          <div className={styles.hamburgerBar}></div>
+          <div className={styles.hamburgerBar}></div>
+        </div>
+        <p>Meny</p>
+      </button>
+    </nav>
+  );
 }
