@@ -6,7 +6,11 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <button onClick={() => setMenuIsOpen(!menuIsOpen)} className={styles.hamburgerButton}>
+      <button
+        type="button"
+        onClick={() => setMenuIsOpen(!menuIsOpen)}
+        className={styles.hamburgerButton}
+      >
         <div className={styles.barsContainer}>
           <div className={styles.hamburgerBar}></div>
           <div className={styles.hamburgerBar}></div>
