@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Navbar.module.sass";
 import Logo from "../../public/assets/icons/logo.svg";
 import Image from "next/future/image";
+import NavPopUpMenu from "../NavPopUpMenu/NavPopUpMenu";
 
 export default function Navbar() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function Navbar() {
         </div>
         Meny
       </button>
+      {menuIsOpen && <NavPopUpMenu menuIsOpenState={setMenuIsOpen} />}
     </nav>
   );
 }
