@@ -9,6 +9,9 @@ export default function Footer() {
         <Link href="om-oss">Om oss</Link>
         <Link href="om-tillgänglighet">Om tillgänglighet</Link>
       </div>
+      <address className={styles.contactContainer}>
+        <a href="/"></a>
+      </address>
     </footer>
   );
 }
