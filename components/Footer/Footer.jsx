@@ -10,7 +10,7 @@ export default function Footer() {
         <Link href="om-tillgänglighet">Om tillgänglighet</Link>
       </div>
       <address className={styles.contactContainer}>
-        <a href="/"></a>
+        <a href="mailto:test@test.com"></a>
       </address>
     </footer>
   );
