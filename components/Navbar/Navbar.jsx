@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <Image className={styles.logo} src={Logo}></Image>
+      <Image className={styles.logo} src={Logo} alt="Loga"></Image>
 
       <button
         type="button"
