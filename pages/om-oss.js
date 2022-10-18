@@ -1,9 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,8 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <Navbar></Navbar>
+      <Navbar></Navbar>
+      <main>
         <h1>Hej</h1>
       </main>
       <Footer></Footer>
