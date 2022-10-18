@@ -7,13 +7,48 @@
     z-index: 10
     top: 0
     left: 0
-    background-color: blue
+    background-color: white
 
 .closeButtonContainer
+    display: flex
+    justify-content: right
+    align-items: center
     width: 100%
-    height: 36px
+    height: 74px
+    padding: 0 18px
 
 .closeButton
+    position: relative
+    width: 32px
+    height: 32px
+    background-color: transparent
+    border: none
+    padding: 0
+
+.xBarOne
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(45deg)
     width: 24px
-    height: 24px
-    background-color: green
+    height: 4px
+    background-color: black
+    border-radius: 100px
+
+.xBarTwo
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-45deg)
+    width: 24px
+    height: 4px
+    background-color: black
+    border-radius: 100px
+
+.linksContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 200px
+    gap: 2rem

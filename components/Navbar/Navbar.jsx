@@ -11,7 +11,15 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Image className={styles.logo} src={Logo}></Image>
 
-      <button type="button" name="Meny" onClick={() => setMenuIsOpen(!menuIsOpen)} className={styles.hamburgerButton}>
+      <button
+        type="button"
+        name="open meny"
+        id="openMenuButton"
+        onClick={() => {
+          setMenuIsOpen(true);
+        }}
+        className={styles.hamburgerButton}
+      >
         <div className={styles.barsContainer}>
           <div className={styles.hamburgerBar}></div>
           <div className={styles.hamburgerBar}></div>
