@@ -18,9 +18,23 @@ export default function Footer() {
         </div>
         <div className={styles.contentContainer}>
           <div className={styles.pageLinkContainer}>
-            <Link href="/">Hem</Link>
-            <Link href="om-oss">Om oss</Link>
-            <Link href="om-tillgänglighet">Om tillgänglighet</Link>
+            <ul>
+              <li>
+                <Link href="/">
+                  <a>Hem</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="om-oss">
+                  <a>Om oss</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="om-tillgänglighet">
+                  <a>Om tillgänglighet</a>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className={styles.contactAndSocialContainer}>
             <div className={styles.contactContainer}>
@@ -44,22 +58,26 @@ export default function Footer() {
               </p>
             </div>
             <div className={styles.socialContainer}>
-              <a href="https://sv-se.facebook.com/">
-                <Image
-                  src="/assets/icons/icon_facebook.svg"
-                  alt="Facebook"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="https://www.instagram.com/">
-                <Image
-                  src="/assets/icons/icon_instagram.svg"
-                  alt="Instagram"
-                  width={24}
-                  height={24}
-                />
-              </a>
+              <div className={styles.socialIcon}>
+                <a href="https://sv-se.facebook.com/">
+                  <Image
+                    src="/assets/icons/icon_facebook.svg"
+                    alt="Facebook"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+              <div className={styles.socialIcon}>
+                <a href="https://www.instagram.com/">
+                  <Image
+                    src="/assets/icons/icon_instagram.svg"
+                    alt="Instagram"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
