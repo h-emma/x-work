@@ -22,43 +22,45 @@ export default function Footer() {
             <Link href="om-oss">Om oss</Link>
             <Link href="om-tillgänglighet">Om tillgänglighet</Link>
           </div>
-          <div className={styles.contactContainer}>
-            <p className={styles.text}>
-              Skicka ett mail till oss,
-              <a
-                className={styles.link}
-                href="mailto:test@test.com"
-                target="blank"
-              >
-                {" "}
-                test@test.com
+          <div className={styles.contactAndSocialContainer}>
+            <div className={styles.contactContainer}>
+              <p className={styles.text}>
+                Skicka ett mail till oss,
+                <a
+                  className={styles.link}
+                  href="mailto:test@test.com"
+                  target="blank"
+                >
+                  {" "}
+                  test@test.com
+                </a>
+              </p>
+              <p className={styles.text}>
+                Eller kontakta oss på,
+                <a className={styles.link} href="tel:+46707345678">
+                  {" "}
+                  0707 345678
+                </a>
+              </p>
+            </div>
+            <div className={styles.socialContainer}>
+              <a href="https://sv-se.facebook.com/">
+                <Image
+                  src="/assets/icons/icon_facebook.svg"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                />
               </a>
-            </p>
-            <p className={styles.text}>
-              Eller kontakta oss på,
-              <a className={styles.link} href="tel:+46707345678">
-                {" "}
-                0707 345678
+              <a href="https://www.instagram.com/">
+                <Image
+                  src="/assets/icons/icon_instagram.svg"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                />
               </a>
-            </p>
-          </div>
-          <div className={styles.socialContainer}>
-            <a href="https://sv-se.facebook.com/">
-              <Image
-                src="/assets/icons/icon_facebook.svg"
-                alt="Facebook"
-                width={24}
-                height={24}
-              />
-            </a>
-            <a href="https://www.instagram.com/">
-              <Image
-                src="/assets/icons/icon_instagram.svg"
-                alt="Instagram"
-                width={24}
-                height={24}
-              />
-            </a>
+            </div>
           </div>
         </div>
         <div className={styles.copyRight}>
