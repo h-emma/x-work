@@ -1,6 +1,6 @@
 @import 'styles/colors'
+@import 'styles/screenSize'
 .footer
-    position: absolute
     bottom: 0
     width: 100%  
 .backgrund
@@ -12,21 +12,21 @@
 .logoContainer
     position: absolute
     margin-left: 16px
-    top: 12%
+    top: 16%
 .contentContainer
     display: flex
     flex-direction: column
     padding-left: 50%
     position: absolute
-    top: 30%
+    top: 33%
 .pageLinkContainer
     display: flex
     flex-direction: column
-    margin-bottom: 48px
+    margin-bottom: 48px 
 .contactContainer
     display: flex
     flex-direction: column
-    margin-bottom: 48px
+    margin: 0 8px 48px 0
 .link 
     text-decoration: underline
 .socialContainer
@@ -45,3 +45,32 @@
 .textCopyRight
       font-size: 12px
       color: $text-color 
+
+@media (min-width: $tablet)
+    .backgrund
+         background-image: url('../../public/assets/images/footer_image_tablet.svg')
+         height: 287px
+    .logoContainer
+        top:30%
+    .contentContainer
+        flex-direction: row
+        padding-left: 0
+        width: 100%
+        justify-content: space-between
+        padding: 0 32px 0 163px
+    .contactAndSocialContainer
+        display: flex
+        flex-direction: column       
+    .contactContainer
+        top: 48%
+        margin: 0 0 16px 0
+    .socialContainer
+        align-items: center
+        gap: 24px
+
+@media (min-width: $desktop)
+    .backgrund
+        background-image: url('../../public/assets/images/footer_image_desktop.svg')
+        height: 343px    
+    .text
+        font-size: 24px
