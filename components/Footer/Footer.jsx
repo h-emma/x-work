@@ -13,9 +13,23 @@ export default function Footer() {
         </div>
         <div className={styles.contentContainer}>
           <div className={styles.pageLinkContainer}>
-            <Link href="/">Hem</Link>
-            <Link href="om-oss">Om oss</Link>
-            <Link href="om-tillgänglighet">Om tillgänglighet</Link>
+            <ul>
+              <li>
+                <Link href="/">
+                  <a>Hem</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="om-oss">
+                  <a>Om oss</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="om-tillgänglighet">
+                  <a>Om tillgänglighet</a>
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className={styles.contactAndSocialContainer}>
             <div className={styles.contactContainer}>

@@ -29,9 +29,21 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
         </button>
       </div>
       <div className={styles.linksContainer}>
-        <Link href="#">Hem</Link>
-        <Link href="#">Om Oss</Link>
-        <Link href="#">Om Tillgänglighet</Link>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Hem</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/om-oss">Om Oss</Link>
+          </li>
+          <li>
+            <Link href="/om-tillgänglighet">
+              <a>Om Tillgänglighet</a>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
