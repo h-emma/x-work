@@ -8,12 +8,7 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image
-              src="/assets/icons/logo.svg"
-              alt="Loga,tillbaka till startsidan"
-              width={86}
-              height={81}
-            />
+            <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={86} height={81} />
           </Link>
         </div>
         <div className={styles.contentContainer}>
@@ -40,11 +35,7 @@ export default function Footer() {
             <div className={styles.contactContainer}>
               <p className={styles.text}>
                 Skicka ett mail till oss,
-                <a
-                  className={styles.link}
-                  href="mailto:test@test.com"
-                  target="blank"
-                >
+                <a className={styles.link} href="mailto:test@test.com" target="blank">
                   {" "}
                   test@test.com
                 </a>
@@ -58,34 +49,29 @@ export default function Footer() {
               </p>
             </div>
             <div className={styles.socialContainer}>
-              <div className={styles.socialIcon}>
-                <a href="https://sv-se.facebook.com/">
-                  <Image
-                    src="/assets/icons/icon_facebook.svg"
-                    alt="Facebook"
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              </div>
-              <div className={styles.socialIcon}>
-                <a href="https://www.instagram.com/">
-                  <Image
-                    src="/assets/icons/icon_instagram.svg"
-                    alt="Instagram"
-                    width={24}
-                    height={24}
-                  />
-                </a>
-              </div>
+              <a href="https://sv-se.facebook.com/">
+                <Image
+                  className={styles.socialImage}
+                  src="/assets/icons/icon_facebook.svg"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                />
+              </a>
+              <a href="https://www.instagram.com/">
+                <Image
+                  className={styles.socialImage}
+                  src="/assets/icons/icon_instagram.svg"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                />
+              </a>
             </div>
           </div>
         </div>
         <div className={styles.copyRight}>
-          <p className={styles.textCopyRight}>
-            {" "}
-            &copy; {new Date().getFullYear()} X-Work - All Rights Reserved
-          </p>
+          <p className={styles.textCopyRight}> &copy; {new Date().getFullYear()} X-Work - All Rights Reserved</p>
         </div>
       </div>
     </footer>
