@@ -2,23 +2,22 @@
 @import 'styles/screenSize'
 .footer
     bottom: 0
-    width: 100%  
+    width: 100%
+    position: absolute
 .backgrund
     height: 654px
+    width: 100%
     background-image: url('../../public/assets/images/footer_image_mobile.svg')
     background-repeat: no-repeat
     background-size: cover
-    position: relative
-.logoContainer
     position: absolute
-    margin-left: 16px
-    top: 16%
+.logoContainer
+    margin: 108px 0 0 16px
 .contentContainer
     display: flex
     flex-direction: column
     padding-left: 50%
-    position: absolute
-    top: 33%
+    margin-bottom: 102px
 .pageLinkContainer
     display: flex
     flex-direction: column
@@ -39,13 +38,10 @@
     margin:0
     padding-bottom: 8px
 .copyRight
-    position: absolute
     margin-left: 16px
-    bottom: 4%
 .textCopyRight
       font-size: 12px
       color: $text-color 
-
 .socialImage
     width: 32px
     height: 32px
@@ -55,23 +51,24 @@
          background-image: url('../../public/assets/images/footer_image_tablet.svg')
          height: 287px
     .logoContainer
-        top:30%
+        margin: 36px 0 0 16px
     .contentContainer
         flex-direction: row
         padding-left: 0
         width: 100%
         justify-content: space-between
         padding: 0 32px 0 163px
+        margin-bottom: 0px
     .contactAndSocialContainer
         display: flex
         flex-direction: column       
     .contactContainer
-        top: 48%
         margin: 0 0 16px 0
     .socialContainer
         align-items: center
         gap: 24px
-    
+    .copyRight
+        margin-bottom: 16px
 
 @media (min-width: $desktop)
     .backgrund
