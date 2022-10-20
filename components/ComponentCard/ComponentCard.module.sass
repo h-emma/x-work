@@ -1,0 +1,48 @@
+@import 'styles/colors'
+@import 'styles/screenSize'
+
+$border-radius: 24px
+
+.card
+    width: 100%
+    min-height: 400px
+    margin: 24px auto
+    border-radius: $border-radius
+    overflow: hidden
+
+
+.infoContainer
+    min-height: 200px
+    background-color: white
+
+    p
+        margin: $border-radius
+
+.infoHeaderContainer
+    display: flex
+    align-items: center
+    background-color: $primary-color
+    height: 50px
+    
+    h2
+        margin: 0 $border-radius
+        color: $text-color
+
+.componentContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 200px
+    background-color: $card-bg
+
+@media (min-width: $tablet)
+    .card
+        display: flex
+        flex-direction: row-reverse
+        max-width: $desktop
+    
+    .infoContainer
+        width: 50%
+
+    .componentContainer
+        width: 50%
