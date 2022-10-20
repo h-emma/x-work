@@ -8,8 +8,22 @@ export default function ScrollToTopButton(props) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const scrollButton = useRef(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY < 100) {
+        scrollButton.current.style.display = "none";
+      } else {
+        scrollButton.current.style.display = "block";
+      }
+    });
+  }, []);
+
   return (
     <button
+      ref={scrollButton}
+      aria-hidden="true"
       onClick={() => {
         scrollToTop();
       }}
