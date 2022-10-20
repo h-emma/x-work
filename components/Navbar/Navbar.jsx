@@ -10,7 +10,9 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <Image className={styles.logo} src={Logo} alt="Loga"></Image>
+      <Link href="/">
+        <Image className={styles.logo} src={Logo} alt="Loga"></Image>
+      </Link>
 
       <ul className={styles.desktopLinksList}>
         <li className={styles.listObject}>
