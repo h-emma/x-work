@@ -8,7 +8,12 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={86} height={81} />
+            <Image
+              src="/assets/icons/logo.svg"
+              alt="Loga,tillbaka till startsidan"
+              width={86}
+              height={81}
+            />
           </Link>
         </div>
         <div className={styles.contentContainer}>
@@ -16,17 +21,17 @@ export default function Footer() {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Hem</a>
+                  <a className={styles.textLink}>Hem</a>
                 </Link>
               </li>
               <li>
                 <Link href="om-oss">
-                  <a>Om oss</a>
+                  <a className={styles.textLink}>Om oss</a>
                 </Link>
               </li>
               <li>
                 <Link href="om-tillgänglighet">
-                  <a>Om tillgänglighet</a>
+                  <a className={styles.textLink}>Om tillgänglighet</a>
                 </Link>
               </li>
             </ul>
@@ -35,7 +40,11 @@ export default function Footer() {
             <div className={styles.contactContainer}>
               <p className={styles.text}>
                 Skicka ett mail till oss,
-                <a className={styles.link} href="mailto:test@test.com" target="blank">
+                <a
+                  className={styles.link}
+                  href="mailto:test@test.com"
+                  target="blank"
+                >
                   {" "}
                   test@test.com
                 </a>
@@ -71,7 +80,10 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyRight}>
-          <p className={styles.textCopyRight}> &copy; {new Date().getFullYear()} X-Work - All Rights Reserved</p>
+          <p className={styles.textCopyRight}>
+            {" "}
+            &copy; {new Date().getFullYear()} X-Work - All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
