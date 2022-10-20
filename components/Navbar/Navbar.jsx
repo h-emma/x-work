@@ -11,7 +11,9 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <Image className={styles.logo} src={Logo} alt="Loga"></Image>
+        <a>
+          <Image className={styles.logo} src={Logo} alt="Loga"></Image>
+        </a>
       </Link>
 
       <ul className={styles.desktopLinksList}>

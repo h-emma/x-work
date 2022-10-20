@@ -9,7 +9,7 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
 
   useEffect(() => {
     document.getElementById("closeMenuButton").focus();
-  });
+  }, []);
 
   return (
     <div className={styles.menu}>

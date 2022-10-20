@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ComponentCard from "../components/ComponentCard/ComponentCard";
+import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
+
+      <ScrollToTopButton></ScrollToTopButton>
 
       <main>
         <ComponentCard
