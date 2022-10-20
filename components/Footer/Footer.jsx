@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <Image
+            <img
               src="/assets/icons/logo.svg"
               alt="Loga,tillbaka till startsidan"
               width={86}
