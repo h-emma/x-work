@@ -8,12 +8,7 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <img
-              src="/assets/icons/logo.svg"
-              alt="Loga,tillbaka till startsidan"
-              width={86}
-              height={81}
-            />
+            <img src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={86} height={81} />
           </Link>
         </div>
         <div className={styles.contentContainer}>
@@ -40,11 +35,7 @@ export default function Footer() {
             <div className={styles.contactContainer}>
               <p className={styles.text}>
                 Skicka ett mail till oss,
-                <a
-                  className={styles.link}
-                  href="mailto:test@test.com"
-                  target="blank"
-                >
+                <a className={styles.link} href="mailto:test@test.com" target="blank">
                   {" "}
                   test@test.com
                 </a>
@@ -80,10 +71,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyRight}>
-          <p className={styles.textCopyRight}>
-            {" "}
-            &copy; {new Date().getFullYear()} X-Work - All Rights Reserved
-          </p>
+          <p className={styles.textCopyRight}> &copy; {new Date().getFullYear()} X-Work - All Rights Reserved</p>
         </div>
       </div>
     </footer>
