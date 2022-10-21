@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Link href="/">
         <a>
-          <img
+          <Image
             src="/assets/icons/logo.svg"
             alt="Loga,tillbaka till startsidan"
             width={86}
@@ -33,7 +33,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li className={styles.listObject}>
-          <Link href="om-tillgänglighet">
+          <Link href="om-tillganglighet">
             <a>Om tillgänglighet</a>
           </Link>
         </li>
