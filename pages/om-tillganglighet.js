@@ -2,7 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
-export default function Home() {
+export default function AboutAccessibility() {
   return (
     <div>
       <Head>
