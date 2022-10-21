@@ -2,8 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import ComponentCard from "../components/ComponentCard/ComponentCard";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
+import ButtonItem from "../components/Footer/Items/ButtonItem/ButtonItem";
+import styles from "../styles/Home.module.sass";
 
 export default function Home() {
   return (
@@ -17,26 +18,12 @@ export default function Home() {
 
       <ScrollToTopButton></ScrollToTopButton>
 
-      <main>
-        <ComponentCard
-          name="The Name"
-          text={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor ipsum eget mollis sollicitudin.
-              Pellentesque id tortor non eros condimentum placerat. Etiam aliquet magna id libero viverra, id
-              ullamcorper erat hendrerit. In hac habitasse platea dictumst. Curabitur ullamcorper laoreet sodales. Nulla
-              quis malesuada nulla. Cras vitae interdum tortor. Nam blandit semper consectetur.
-              <br />
-              <br />
-              Sed convallis mi ut leo accumsan, ut venenatis purus varius. Aliquam a consequat erat, in tristique ex.
-              Sed sit amet scelerisque nisl, in molestie sapien. Vivamus id finibus lectus. Nam tincidunt, enim at
-              placerat vestibulum, diam dolor molestie sem, ut imperdiet justo diam eget metus. Pellentesque ligula
-              massa, dapibus vitae ultrices nec, ornare vitae lacus.
-            </p>
-          }
-        >
-          A Component
-        </ComponentCard>
+      <main className={styles.main}>
+        <section className={styles.itemsSection}>
+          <ButtonItem />
+          <ButtonItem />
+          <ButtonItem />
+        </section>
       </main>
 
       <Footer></Footer>

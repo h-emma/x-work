@@ -1,6 +1,6 @@
-import styles from "./ComponentCard.module.sass";
+import styles from "./ItemCard.module.sass";
 
-export default function ComponentCard(props) {
+export default function ItemCard(props) {
   return (
     <section className={styles.card}>
       <div className={styles.infoContainer}>
