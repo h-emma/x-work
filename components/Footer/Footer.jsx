@@ -8,12 +8,14 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/">
-            <img
-              src="/assets/icons/logo.svg"
-              alt="Loga,tillbaka till startsidan"
-              width={86}
-              height={81}
-            />
+            <a>
+              <Image
+                src="/assets/icons/logo.svg"
+                alt="Loga,tillbaka till startsidan"
+                width={86}
+                height={81}
+              />
+            </a>
           </Link>
         </div>
         <div className={styles.contentContainer}>
@@ -30,7 +32,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="om-tillgänglighet">
+                <Link href="om-tillganglighet">
                   <a className={styles.textLink}>Om tillgänglighet</a>
                 </Link>
               </li>
