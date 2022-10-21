@@ -29,7 +29,7 @@ export default function ScrollToTopButton(props) {
       }}
       className={styles.scrollButton}
     >
-      <Image src={UpArrow}></Image>
+      <Image src={UpArrow} alt={""}></Image>
     </button>
   );
 }
