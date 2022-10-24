@@ -1,3 +1,59 @@
+@import 'styles/colors'
+@import 'styles/screenSize'
+
+
 .startSection
     display: flex
+    flex-direction: column-reverse
+    max-width: $desktop
+    padding: $page-gutter-size
+    gap: 24px
     
+.article
+    border: 1px solid black
+
+    p
+        margin: 24px
+        color: $text-color
+        font-size: 16px
+
+
+.articleHeaderContainer
+    display: flex
+    align-items: center
+    background-color: $primary-color
+    height: 50px
+
+    h1
+        margin: 0 24px
+        color: $text-color
+        font-size: 24px
+    
+
+.itemListContainer
+    display: flex
+    flex-direction: column
+    border: 1px solid black
+
+    h2
+        margin: 24px 24px 12px 24px
+        color: $text-color
+        font-size: 18px
+    
+    ul
+        margin: 0 24px 24px 48px
+    
+    li
+        margin: 12px 0
+
+    a
+        text-decoration: underline
+        font-size: 18px
+
+    
+@media (min-width: $tablet)
+    .startSection
+        flex-direction: row
+       
+
+@media (min-width: $desktop)

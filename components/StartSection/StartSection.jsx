@@ -5,7 +5,7 @@ import styles from "./StartSection.module.sass";
 export default function StartSection() {
   return (
     <section className={styles.startSection}>
-      <div>
+      <div className={styles.itemListContainer}>
         <h2>Innehållsförteckning</h2>
         <ul>
           <li>
@@ -21,8 +21,8 @@ export default function StartSection() {
           </li>
         </ul>
       </div>
-      <article>
-        <div>
+      <article className={styles.article}>
+        <div className={styles.articleHeaderContainer}>
           <h1>Tillgänglighet</h1>
         </div>
         <StartSectionText />
