@@ -47,9 +47,8 @@
     position: absolute
     bottom: 0
 .textCopyRight
-      font-size: 12px
-      color: $text-color
-      font-family: Poppins
+    @extend .text
+    font-size: 12px
 .socialImage
     width: 32px
     height: 32px
@@ -84,9 +83,12 @@
         background-image: url('../../public/assets/images/footer_image_desktop.svg')
         height: 343px    
     .text
-        font-size: 24px
+        font-size: 18px
     .textLink
-        font-size: 24px    
+        font-size: 18px
+    .textCopyRight
+        @extend .text
+        font-size: 16px
     .socialImage
         width: 48px
         height: 48px

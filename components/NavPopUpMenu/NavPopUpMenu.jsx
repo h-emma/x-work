@@ -16,7 +16,7 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
       <div className={styles.closeButtonContainer}>
         <button
           type="button"
-          name="close menu"
+          name="stäng meny"
           id="closeMenuButton"
           onClick={() => {
             menuIsOpenState(false);

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.sass";
-import Logo from "../../public/assets/icons/logo.svg";
 import Image from "next/future/image";
 import NavPopUpMenu from "../NavPopUpMenu/NavPopUpMenu";
 
@@ -12,12 +11,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <Link href="/">
         <a>
-          <Image
-            src="/assets/icons/logo.svg"
-            alt="Loga,tillbaka till startsidan"
-            width={86}
-            height={81}
-          />
+          <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={86} height={81} />
         </a>
       </Link>
 
@@ -41,7 +35,7 @@ export default function Navbar() {
 
       <button
         type="button"
-        name="open meny"
+        name="öppna meny"
         id="openMenuButton"
         onClick={() => {
           setMenuIsOpen(true);
