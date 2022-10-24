@@ -4,7 +4,7 @@ import ButtonItemText from "./ButtonItemText";
 
 export default function ButtonItem() {
   return (
-    <ItemCard id="button-item" name="Buttons" text={<ButtonItemText />}>
+    <ItemCard id="button-item" name="Button" text={<ButtonItemText />}>
       <button>A Button</button>
     </ItemCard>
   );

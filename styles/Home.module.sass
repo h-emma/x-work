@@ -1,10 +1,33 @@
+@import 'styles/colors'
+@import 'styles/screenSize'
 
 
 .main
-    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    // flex: 1
     //https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
     
 .itemsSection
     display: flex
     flex-direction: column
+    max-width: $desktop
     padding: 24px
+    gap: 48px
+
+.itemsHeaderContainer
+    width: 100%
+    max-width: $desktop
+    padding: $page-gutter-size
+    padding: 24px 0 12px 32px
+
+    h2
+        margin: 0
+
+@media (min-width: $tablet)
+    .itemsHeaderContainer
+        padding: 24px 0 12px 48px
+
+
+@media (min-width: $desktop)

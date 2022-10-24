@@ -20,6 +20,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <StartSection />
+        <div className={styles.itemsHeaderContainer}>
+          <h2>Komponenter</h2>
+        </div>
         <section className={styles.itemsSection}>
           <ButtonItem />
           <ButtonItem />

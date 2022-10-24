@@ -1,14 +1,13 @@
 @import 'styles/colors'
 @import 'styles/screenSize'
 
-$border-radius: 24px
-
 .card
     width: 100%
     min-height: 400px
-    margin: 24px auto
-    border-radius: $border-radius
+    margin: 0 auto
+    border-radius: $page-gutter-size
     overflow: hidden
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1529411765)
 
 
 .infoContainer
@@ -16,7 +15,7 @@ $border-radius: 24px
     background-color: white
 
     p
-        margin: $border-radius
+        margin: $page-gutter-size
         font-family: Poppins
 
 .infoHeaderContainer
@@ -26,8 +25,9 @@ $border-radius: 24px
     height: 50px
     
     h2
-        margin: 0 $border-radius
+        margin: 0 $page-gutter-size
         color: $text-color
+        font-size: 20px
 
 .componentContainer
     display: flex
