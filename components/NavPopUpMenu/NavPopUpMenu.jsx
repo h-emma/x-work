@@ -31,17 +31,13 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
       <div className={styles.linksContainer}>
         <ul>
           <li>
-            <a href="/">
-              <a>Hem</a>
-            </a>
+            <Link href="/">Hem</Link>
           </li>
           <li>
-            <a href="/om-oss">Om Oss</a>
+            <Link href="/om-oss">Om Oss</Link>
           </li>
           <li>
-            <a href="/om-tillganglighet">
-              <a>Om Tillgänglighet</a>
-            </a>
+            <Link href="/om-tillganglighet">Om Tillgänglighet</Link>
           </li>
         </ul>
       </div>
