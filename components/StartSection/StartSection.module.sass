@@ -5,12 +5,17 @@
 .startSection
     display: flex
     flex-direction: column-reverse
-    max-width: $desktop
+    justify-content: flex-end
+    max-width: $card-max-width
     padding: $page-gutter-size
-    gap: 24px
+    gap: 18px
+    z-index: 2
+
     
 .article
-    border: 1px solid black
+    background-color: white
+    border-radius: 8px
+    box-shadow: $main-box-shadow
 
     p
         margin: 24px
@@ -21,19 +26,24 @@
 .articleHeaderContainer
     display: flex
     align-items: center
-    background-color: blue
+    background-color: $dark-detail-color
     height: 50px
+    border-top-right-radius: inherit
+    border-top-left-radius: inherit
+
 
     h1
         margin: 0 24px
-        color: $text-color
+        color: white
         font-size: 24px
     
 
 .itemListContainer
     display: flex
     flex-direction: column
-    border: 1px solid black
+    background-color: white
+    border-radius: 8px
+    box-shadow: $main-box-shadow
 
     h2
         margin: 24px 24px 12px 24px
@@ -54,6 +64,9 @@
 @media (min-width: $tablet)
     .startSection
         flex-direction: row
+        min-height: 75vh
+    
+    .itemListContainer
        
 
 @media (min-width: $desktop)

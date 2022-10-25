@@ -1,10 +1,12 @@
 import Head from "next/head";
+import Image from "next/future/image";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 import ButtonItem from "../components/Items/ButtonItem/ButtonItem";
 import styles from "../styles/Home.module.sass";
 import StartSection from "../components/StartSection/StartSection";
+import LogoBG from "../public/assets/images/logo-bg.svg";
 
 export default function Home() {
   return (
@@ -19,7 +21,11 @@ export default function Home() {
       <ScrollToTopButton></ScrollToTopButton>
 
       <main className={styles.main}>
-        <StartSection />
+        <section className={styles.startSectionContainer}>
+          <StartSection />
+          <Image src={LogoBG} className={styles.logoBG}></Image>
+        </section>
+
         <div className={styles.itemsHeaderContainer}>
           <h2>Komponenter</h2>
         </div>

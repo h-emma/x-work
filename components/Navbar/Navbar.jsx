@@ -10,8 +10,14 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <a>
-          <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={86} height={81} />
+        <a id="logo">
+          <Image
+            className={styles.logo}
+            src="/assets/icons/logo.svg"
+            alt="Loga,tillbaka till startsidan"
+            width={91}
+            height={91}
+          />
         </a>
       </Link>
 
