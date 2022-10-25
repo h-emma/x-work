@@ -1,16 +1,12 @@
 export default function ButtonItem() {
   return (
     <p>
-      A text about tillgänglighet, consectetur adipiscing elit. Quisque auctor ipsum eget mollis sollicitudin.
-      Pellentesque id tortor non eros condimentum placerat. Etiam aliquet magna id libero viverra, id ullamcorper erat
-      hendrerit. In hac habitasse platea dictumst. Curabitur ullamcorper laoreet sodales. Nulla quis malesuada nulla.
-      Cras vitae interdum tortor. Nam blandit semper consectetur.
-      <br />
-      <br />
-      Sed convallis mi ut leo accumsan, ut venenatis purus varius. Aliquam a consequat erat, in tristique ex. Sed sit
-      amet scelerisque nisl, in molestie sapien. Vivamus id finibus lectus. Nam tincidunt, enim at placerat vestibulum,
-      diam dolor molestie sem, ut imperdiet justo diam eget metus. Pellentesque ligula massa, dapibus vitae ultrices
-      nec, ornare vitae lacus.
+      Tillgäglighet eller accessibility som det heter på engelska är en viktig del av webbens funktion. För att kunna
+      erbjuda webben för alla behöver utveckare tänka på tillgänglighet är en utvecklar en hemsida. Men vad är det då
+      man ska tänka på? Är det krångligt och behöver man tumma på det visuella? Nedan följer en lista på vanliga
+      komponenter och hur dessa kan kodas för att oppnimera tillgängligheten. Under fliken om tillgänglighet finner ni
+      även länkar till andra sidor som har upp ämnet eller ger hjälp för att kunna bygga en så tillgänglig sida som
+      möjligt.
     </p>
   );
 }

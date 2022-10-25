@@ -8,17 +8,29 @@
     align-items: center
     // flex: 1
     //https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
-    
+
+.startSectionContainer
+    display: flex
+    justify-content: center
+    padding-top: 50px
+    width: 100%
+    min-height: calc(100vh - 106px)
+    background-color: $hero-bg-color
+    align-items: flex-start
+
+.logoBG
+    display: none
+
 .itemsSection
     display: flex
     flex-direction: column
-    max-width: $desktop
+    max-width: $card-max-width
     padding: 24px
     gap: 48px
 
 .itemsHeaderContainer
     width: 100%
-    max-width: $desktop
+    max-width: $card-max-width
     padding: $page-gutter-size
     padding: 24px 0 12px 32px
 
@@ -28,6 +40,13 @@
 @media (min-width: $tablet)
     .itemsHeaderContainer
         padding: 24px 0 12px 48px
+    
+    .logoBG
+        display: block
+        position: absolute
+        right: 0
+        bottom: -60px
+        z-index: 1
 
 
 @media (min-width: $desktop)

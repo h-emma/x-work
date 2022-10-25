@@ -7,7 +7,7 @@
     margin: 0 auto
     border-radius: $page-gutter-size
     overflow: hidden
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1529411765)
+    box-shadow: $main-box-shadow
 
 
 .infoContainer
@@ -21,12 +21,12 @@
 .infoHeaderContainer
     display: flex
     align-items: center
-    background-color: blue
+    background-color: $dark-detail-color
     height: 50px
     
     h2
         margin: 0 $page-gutter-size
-        color: $text-color
+        color: white
         font-size: 20px
 
 .componentContainer
@@ -40,7 +40,7 @@
     .card
         display: flex
         flex-direction: row-reverse
-        max-width: $desktop
+        max-width: $card-max-width
     
     .infoContainer
         width: 50%
