@@ -61,7 +61,10 @@ export default function Footer() {
               </p>
             </div>
             <div className={styles.socialContainer}>
-              <a href="https://sv-se.facebook.com/">
+              <a
+                href="https://sv-se.facebook.com/"
+                className="social-media-link"
+              >
                 <Image
                   className={styles.socialImage}
                   src="/assets/icons/icon_facebook.svg"
@@ -70,7 +73,10 @@ export default function Footer() {
                   height={24}
                 />
               </a>
-              <a href="https://www.instagram.com/">
+              <a
+                href="https://www.instagram.com/"
+                className="social-media-link"
+              >
                 <Image
                   className={styles.socialImage}
                   src="/assets/icons/icon_instagram.svg"

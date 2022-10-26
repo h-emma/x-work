@@ -39,15 +39,27 @@ a:focus-visible {
   outline-width: 2px;
 }
 
-a:focus-visible:not(.non-highlighted-text) {
+a:focus-visible:not(.non-highlighted-text, .social-media-link) {
   outline-color: transparent;
   background-color: #3b3b3b;
   color: white;
 }
 
-a:hover:not(.non-highlighted-text) {
+a:hover:not(.non-highlighted-text, .social-media-link) {
   background-color: #3b3b3b;
   color: white;
+}
+
+.social-media-link:hover {
+  background-color: white;
+  border-radius: 100px;
+}
+
+.social-media-link:focus-visible {
+  outline-color: transparent;
+
+  background-color: white;
+  border-radius: 100px;
 }
 
 * {
