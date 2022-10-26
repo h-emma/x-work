@@ -12,11 +12,10 @@ export default function Navbar() {
       <Link href="/">
         <a className={"non-highlighted-text"}>
           <Image
-            className={styles.logo}
             src="/assets/icons/logo.svg"
             alt="Loga,tillbaka till startsidan"
-            width={91}
-            height={91}
+            width={80}
+            height={80}
           />
         </a>
       </Link>

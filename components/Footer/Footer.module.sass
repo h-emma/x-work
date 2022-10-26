@@ -1,7 +1,10 @@
 @import 'styles/colors'
 @import 'styles/screenSize'
+
 .footer
     width: 100%
+   
+
 .backgrund
     height: 654px
     width: 100%
@@ -9,46 +12,63 @@
     background-repeat: no-repeat
     background-size: cover
     position: absolute
+
 .logoContainer
+    display: flex
     margin: 108px 0 0 16px
+    a
+        width: 75px
+        height: 75px
+        padding: 0
+
+
 .contentContainer
     display: flex
     flex-direction: column
     padding-left: 50%
     margin-bottom: 102px
+
 .pageLinkContainer
     display: flex
     flex-direction: column
     margin-bottom: 48px 
+
 .textLink
     font-size: 16px
     color: $text-color  
     margin:0
     padding-bottom: 8px
     font-family: Poppins
+
 .contactContainer
     display: flex
     flex-direction: column
     margin: 0 8px 48px 0
+
 .link 
     text-decoration: underline
+
 .socialContainer
     display: flex
     flex-direction: row
     gap: 16px
+
 .text
     font-size: 16px
     color: $text-color  
     margin:0
     padding-bottom: 8px
     font-family: Poppins
+
 .copyRight
     margin-left: 16px
     position: absolute
     bottom: 0
+
 .textCopyRight
     @extend .text
     font-size: 12px
+
 .socialImage
     width: 32px
     height: 32px

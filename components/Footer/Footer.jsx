@@ -12,12 +12,13 @@ export default function Footer() {
               <Image
                 src="/assets/icons/logo.svg"
                 alt="Loga,tillbaka till startsidan"
-                width={84}
-                height={84}
+                width={75}
+                height={75}
               />
             </a>
           </Link>
         </div>
+
         <div className={styles.contentContainer}>
           <div className={styles.pageLinkContainer}>
             <ul>
