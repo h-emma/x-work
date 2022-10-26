@@ -56,7 +56,7 @@ export default function Footer() {
                 Eller kontakta oss på,
                 <a className={styles.link} href="tel:+46707345678">
                   {" "}
-                  0707 345678
+                  0707-345678
                 </a>
               </p>
             </div>
