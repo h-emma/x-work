@@ -34,10 +34,10 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
             <Link href="/">Hem</Link>
           </li>
           <li>
-            <Link href="/om-oss">Om Oss</Link>
+            <Link href="/om-oss">Om oss</Link>
           </li>
           <li>
-            <Link href="/om-tillganglighet">Om Tillgänglighet</Link>
+            <Link href="/om-tillganglighet">Om tillgänglighet</Link>
           </li>
         </ul>
       </div>
