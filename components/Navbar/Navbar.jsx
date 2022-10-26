@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <a id="logo">
+        <a className={"non-highlighted-text"}>
           <Image
             className={styles.logo}
             src="/assets/icons/logo.svg"

@@ -1,19 +1,20 @@
 @import 'styles/colors'
 @import 'styles/screenSize'
+
 .nav
     display: flex
+    position: relative
     width: 100%
     height: 106px
     background-color: white
     justify-content: space-between
     align-items: center
     padding: 0 12px
-
+    z-index: 3
     a
         width: 91px
         height: 91px
-
-.logo
+        padding: 0
 
 .hamburgerButton
     display: flex
@@ -46,8 +47,6 @@
 
 .listObject
     display: none
-
-@media (min-width: $tablet)
 
 @media (min-width: $desktop)
     .hamburgerButton
