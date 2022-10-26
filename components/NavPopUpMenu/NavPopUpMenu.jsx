@@ -1,14 +1,12 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./NavPopUpMenu.module.sass";
 
-export default function NavPopUpMenu({ menuIsOpenState }) {
-  const focusOnMenuButton = () => {
-    document.getElementById("openMenuButton").focus();
-  };
+export default function NavPopUpMenu({ menuIsOpenState, openMenuButton }) {
+  const homeLink = useRef(null);
 
   useEffect(() => {
-    document.getElementById("closeMenuButton").focus();
+    homeLink.current.focus();
   }, []);
 
   return (
@@ -20,7 +18,7 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
           id="closeMenuButton"
           onClick={() => {
             menuIsOpenState(false);
-            focusOnMenuButton();
+            openMenuButton.focus();
           }}
           className={styles.closeButton}
         >
@@ -31,7 +29,9 @@ export default function NavPopUpMenu({ menuIsOpenState }) {
       <div className={styles.linksContainer}>
         <ul>
           <li>
-            <Link href="/">Hem</Link>
+            <Link href="/">
+              <a ref={homeLink}>Hem</a>
+            </Link>
           </li>
           <li>
             <Link href="/om-oss">Om oss</Link>

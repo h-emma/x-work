@@ -13,9 +13,9 @@ export default function ScrollToTopButton(props) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY < 100) {
-        scrollButton.current.style.display = "none";
+        scrollButton.current && (scrollButton.current.style.display = "none");
       } else {
-        scrollButton.current.style.display = "block";
+        scrollButton.current && (scrollButton.current.style.display = "block");
       }
     });
   }, []);
