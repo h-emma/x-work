@@ -8,7 +8,7 @@ export default function LinkItemText() {
       </p>
       <p>
         För att undvika att leda bort användaren från hemsidan kan man lägga
-        till ‘target="_blank”‘. Då öppnar webbläsaren en ny flik.
+        till target=&quot;_blank&quot;. Då öppnar webbläsaren en ny flik.
       </p>
       <p>
         Användare gillar inte att bli överraskade så ett bra komplement kan vara
