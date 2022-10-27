@@ -7,6 +7,7 @@ import ButtonItem from "../components/Items/ButtonItem/ButtonItem";
 import styles from "../styles/Home.module.sass";
 import StartSection from "../components/StartSection/StartSection";
 import LogoBG from "../public/assets/images/logo-bg.svg";
+import LinkItem from "../components/Items/LinkItem/LinkItem";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
-          <ButtonItem />
+          <LinkItem />
           <ButtonItem />
           <ButtonItem />
         </section>

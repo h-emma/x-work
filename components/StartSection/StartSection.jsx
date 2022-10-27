@@ -9,7 +9,9 @@ export default function StartSection() {
         <h2>Innehållsförteckning</h2>
         <ul>
           <li>
-            <Link href="">Button</Link>
+            <Link href="#link-item" scroll={false}>
+              Link/Anchor
+            </Link>
           </li>
           <li>
             <Link href="">Button</Link>
