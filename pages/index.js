@@ -8,8 +8,11 @@ import styles from "../styles/Home.module.sass";
 import StartSection from "../components/StartSection/StartSection";
 import LogoBG from "../public/assets/images/logo-bg.svg";
 import LinkItem from "../components/Items/LinkItem/LinkItem";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const itemList = useRef(null);
+
   return (
     <>
       <Head>
@@ -18,18 +21,12 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <ScrollToTopButton></ScrollToTopButton>
+      <ScrollToTopButton itemList={itemList}></ScrollToTopButton>
 
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
-          <StartSection />
-          <Image
-            src={LogoBG}
-            alt={""}
-            className={styles.logoBG}
-            loading="eager"
-            priority={true}
-          ></Image>
+          <StartSection ref={itemList} />
+          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>

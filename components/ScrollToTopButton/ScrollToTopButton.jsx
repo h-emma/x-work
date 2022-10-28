@@ -3,9 +3,9 @@ import Image from "next/image";
 import UpArrow from "../../public/assets/icons/arrow_up.svg";
 import { useEffect, useRef } from "react";
 
-export default function ScrollToTopButton(props) {
+export default function ScrollToTopButton(itemList) {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    itemList.itemList.current.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollButton = useRef(null);
