@@ -14,13 +14,14 @@ const StartSection = react.forwardRef((props, ref) => {
               Link/Anchor
             </Link>
           </li>
+
           <li>
-            <Link href="">Button</Link>
+            <Link href="#dropdown-item" scroll={false}>
+              Dropdown
+            </Link>
           </li>
           <li>
-            <Link href="#button-item" scroll={false}>
-              Button
-            </Link>
+            <Link href="">Button</Link>
           </li>
         </ul>
       </div>
