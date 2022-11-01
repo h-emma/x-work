@@ -9,6 +9,7 @@ import StartSection from "../components/StartSection/StartSection";
 import LogoBG from "../public/assets/images/logo-bg.svg";
 import LinkItem from "../components/Items/LinkItem/LinkItem";
 import { useEffect, useRef } from "react";
+import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -40,7 +41,7 @@ export default function Home() {
         </div>
         <section className={styles.itemsSection}>
           <LinkItem />
-          <ButtonItem />
+          <DropdownItem />
           <ButtonItem />
         </section>
       </main>
