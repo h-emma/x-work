@@ -5,7 +5,7 @@ import DropdownItemText from "./DropdownItemText";
 export default function DropdownItem() {
   return (
     <ItemCard id="dropdown-item" name="Dropdown" text={<DropdownItemText />}>
-      <nav className={styles.dropdownContainer}>
+      <nav className={styles.navContainer}>
         <ul className={styles.parentList}>
           <li>
             <a href="">No Drop-down</a>
@@ -24,8 +24,10 @@ export default function DropdownItem() {
             </ul>
           </li>
           <li>
-            <a href="">Link</a>
-            <button>v</button>
+            <a href="" className={styles.withButtonTab}>
+              Link
+            </a>
+            <button className={styles.openMenuButton}>v</button>
           </li>
         </ul>
       </nav>

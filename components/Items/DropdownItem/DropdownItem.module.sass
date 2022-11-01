@@ -1,28 +1,45 @@
 @import 'styles/colors'
-    
-.dropdownContainer > ul li
-    position: relative
 
-.dropdownContainer > ul li ul
+.navContainer
+
+    li
+        position: relative
+        background-color: transparent
+        padding: 0
+
+    a
+        display: flex
+        position: relative
+        padding: 12px
+        background-color: white
+        border-radius: 0
+
+    a:focus-visible
+        background-color: white
+        outline: 2px solid blue
+        color: black
+        z-index: 2
+        text-decoration: underline
+
+
+    a:hover
+        background-color: blue
+        color: white
+        text-decoration: underline
+
+
+.parentList li ul
     display: none
 
-.showDropdown
+
+.parentList li:hover ul
     display: block
     position: absolute
     background-color: white
     color: black
     width: 100%
     left: 0
-    top: 100% 
-
-.dropdownContainer > ul li:hover ul
-    @extend .showDropdown
-
-.dropdownContainer > ul li:focus-visible ul
-    @extend .showDropdown
-
-
-
+    top: 100%
 
 
 .parentList
@@ -33,15 +50,12 @@
     background-color: white
     border-radius: 6px
 
-    li
-        padding: 6px
+.withButtonTab
+    width: 80px
 
-    a:hover
-        background-color: $dark-detail-color
-        color: white
-        
-    
-    a
-        width: 100%
-        height: 100%
-        
+.openMenuButton
+    position: absolute
+    top: 50%
+    right: 12px
+    transform: translate(0, -50%)
+    z-index: 3
