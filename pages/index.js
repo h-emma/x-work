@@ -22,8 +22,6 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <ScrollToTopButton itemList={itemList}></ScrollToTopButton>
-
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
@@ -47,6 +45,7 @@ export default function Home() {
       </main>
 
       <Footer></Footer>
+      <ScrollToTopButton itemList={itemList}></ScrollToTopButton>
     </>
   );
 }
