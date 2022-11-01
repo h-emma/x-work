@@ -29,8 +29,8 @@ export default function NavPopUpMenu({ menuIsOpenState, openMenuButton }) {
       <div className={styles.linksContainer}>
         <ul>
           <li>
-            <Link href="/">
-              <a ref={homeLink}>Hem</a>
+            <Link href="/" ref={homeLink}>
+              Hem
             </Link>
           </li>
           <li>

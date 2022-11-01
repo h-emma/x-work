@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.sass";
-import Image from "next/future/image";
+import Image from "next/image";
 import NavPopUpMenu from "../NavPopUpMenu/NavPopUpMenu";
 
 export default function Navbar() {
@@ -11,27 +11,24 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <Link href="/">
-        <a className={"non-highlighted-text"}>
-          <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={80} height={80} />
-        </a>
+      <Link href="/" className={"non-highlighted-text"}>
+        <Image
+          src="/assets/icons/logo.svg"
+          alt="Loga,tillbaka till startsidan"
+          width={80}
+          height={80}
+        />
       </Link>
 
       <ul className={styles.desktopLinksList}>
         <li className={styles.listObject}>
-          <Link href="/">
-            <a>Hem</a>
-          </Link>
+          <Link href="/">Hem</Link>
         </li>
         <li className={styles.listObject}>
-          <Link href="om-oss">
-            <a>Om oss</a>
-          </Link>
+          <Link href="om-oss">Om oss</Link>
         </li>
         <li className={styles.listObject}>
-          <Link href="om-tillganglighet">
-            <a>Om tillgänglighet</a>
-          </Link>
+          <Link href="om-tillganglighet">Om tillgänglighet</Link>
         </li>
       </ul>
 
@@ -52,7 +49,12 @@ export default function Navbar() {
         </div>
         Meny
       </button>
-      {menuIsOpen && <NavPopUpMenu menuIsOpenState={setMenuIsOpen} openMenuButton={openMenuButton.current} />}
+      {menuIsOpen && (
+        <NavPopUpMenu
+          menuIsOpenState={setMenuIsOpen}
+          openMenuButton={openMenuButton.current}
+        />
+      )}
     </nav>
   );
 }

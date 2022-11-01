@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/future/image";
+import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
@@ -26,7 +26,13 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
+          <Image
+            src={LogoBG}
+            alt={""}
+            className={styles.logoBG}
+            loading="eager"
+            priority={true}
+          ></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>

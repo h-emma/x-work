@@ -1,21 +1,19 @@
 import styles from "./Footer.module.sass";
 import Link from "next/link";
-import Image from "next/future/image";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
-          <Link href="/">
-            <a className={"non-highlighted-text"}>
-              <Image
-                src="/assets/icons/logo.svg"
-                alt="Loga,tillbaka till startsidan"
-                width={75}
-                height={75}
-              />
-            </a>
+          <Link href="/" className={"non-highlighted-text"}>
+            <Image
+              src="/assets/icons/logo.svg"
+              alt="Loga,tillbaka till startsidan"
+              width={75}
+              height={75}
+            />
           </Link>
         </div>
 
@@ -23,18 +21,18 @@ export default function Footer() {
           <div className={styles.pageLinkContainer}>
             <ul>
               <li>
-                <Link href="/">
-                  <a className={styles.textLink}>Hem</a>
+                <Link href="/" className={styles.textLink}>
+                  Hem
                 </Link>
               </li>
               <li>
-                <Link href="om-oss">
-                  <a className={styles.textLink}>Om oss</a>
+                <Link href="om-oss" className={styles.textLink}>
+                  Om oss
                 </Link>
               </li>
               <li>
-                <Link href="om-tillganglighet">
-                  <a className={styles.textLink}>Om tillgänglighet</a>
+                <Link href="om-tillganglighet" className={styles.textLink}>
+                  Om tillgänglighet
                 </Link>
               </li>
             </ul>
