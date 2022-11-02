@@ -1,8 +1,26 @@
 import ItemCard from "../../ItemCard/ItemCard";
 import styles from "./DropdownItem.module.sass";
 import DropdownItemText from "./DropdownItemText";
+import { useEffect, useRef, useState } from "react";
 
 export default function DropdownItem() {
+  const noLinkTab = useRef(null);
+
+  const [noLinkTabIsOpen, setNoLinkTabIsOpen] = useState(false);
+
+  useEffect(() => {
+    noLinkTab.current.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
+    noLinkTab.current.addEventListener("mouseout", () => {
+      setNoLinkTabIsOpen(false);
+    });
+  }, []);
+
+  const toggleNoLinkTabIsOpen = () => {
+    setNoLinkTabIsOpen((current) => !current);
+  };
+
   return (
     <ItemCard id="dropdown-item" name="Dropdown" text={<DropdownItemText />}>
       <nav className={styles.navContainer}>
@@ -11,10 +29,16 @@ export default function DropdownItem() {
             <a href="">No Drop-down</a>
           </li>
           <li>
-            <a href="" style={{ textDecoration: "none" }}>
+            <a
+              href=""
+              ref={noLinkTab}
+              className={styles.noLinkTab}
+              style={{ textDecoration: "none" }}
+              onClick={toggleNoLinkTabIsOpen}
+            >
               No Link
             </a>
-            <ul>
+            <ul className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a href="">Item 1</a>
               </li>

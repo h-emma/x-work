@@ -30,16 +30,19 @@
 
 .parentList li ul
     display: none
-
-
-.parentList li:hover ul
-    display: block
     position: absolute
     background-color: white
     color: black
     width: 100%
     left: 0
     top: 100%
+
+.displayNoLinkList
+    display: block !important
+
+
+.parentList li:hover ul
+    display: block
 
 
 .parentList
@@ -59,3 +62,5 @@
     right: 12px
     transform: translate(0, -50%)
     z-index: 3
+
+.noLinkTab
