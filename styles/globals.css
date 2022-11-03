@@ -38,7 +38,8 @@ a {
 }
 
 button:focus-visible,
-a:focus-visible {
+a:focus-visible,
+h2:focus-visible {
   outline-color: blue;
   outline-style: solid;
   outline-width: 2px;

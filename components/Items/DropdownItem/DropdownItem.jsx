@@ -3,7 +3,7 @@ import styles from "./DropdownItem.module.sass";
 import DropdownItemText from "./DropdownItemText";
 import { useEffect, useRef, useState } from "react";
 
-export default function DropdownItem() {
+export default function DropdownItem(itemList) {
   const noLinkTab = useRef(null);
 
   const [noLinkTabIsOpen, setNoLinkTabIsOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function DropdownItem() {
   };
 
   return (
-    <ItemCard id="dropdown-item" name="Dropdown" text={<DropdownItemText />}>
+    <ItemCard id="dropdown-item" name="Dropdown" text={<DropdownItemText />} itemList={itemList}>
       <nav className={styles.navContainer}>
         <ul className={styles.parentList}>
           <li>
