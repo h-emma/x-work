@@ -5,8 +5,12 @@ import { useEffect, useRef, useState } from "react";
 
 export default function DropdownItem(itemList) {
   const noLinkTab = useRef(null);
+  const linkTab = useRef(null);
+  const noLinkList = useRef(null);
+  const linkList = useRef(null);
 
   const [noLinkTabIsOpen, setNoLinkTabIsOpen] = useState(false);
+  const [linkTabIsOpen, setLinkTabIsOpen] = useState(false);
 
   useEffect(() => {
     noLinkTab.current.addEventListener("click", (e) => {
@@ -15,10 +19,55 @@ export default function DropdownItem(itemList) {
     noLinkTab.current.addEventListener("mouseout", () => {
       setNoLinkTabIsOpen(false);
     });
+    linkTab.current.addEventListener("mouseout", () => {
+      setLinkTabIsOpen(false);
+    });
+    const noLinkListChildren = Array.from(noLinkList.current.children);
+    noLinkListChildren.map((child) => {
+      let timer = null;
+      child.firstChild.addEventListener("mouseenter", () => {
+        setNoLinkTabIsOpen(true);
+        if (timer) {
+          clearTimeout(timer);
+        }
+      });
+      child.firstChild.addEventListener("mouseout", () => {
+        timer = setTimeout(() => {
+          setNoLinkTabIsOpen(false);
+        }, 1000);
+      });
+    });
+
+    const linkListChildren = Array.from(linkList.current.children);
+    linkListChildren.map((child) => {
+      let timer = null;
+      child.firstChild.addEventListener("mouseenter", () => {
+        setLinkTabIsOpen(true);
+        if (timer) {
+          clearTimeout(timer);
+        }
+      });
+      child.firstChild.addEventListener("mouseout", () => {
+        timer = setTimeout(() => {
+          setLinkTabIsOpen(false);
+        }, 1000);
+      });
+    });
   }, []);
 
   const toggleNoLinkTabIsOpen = () => {
     setNoLinkTabIsOpen((current) => !current);
+    if (!noLinkTabIsOpen) {
+      setLinkTabIsOpen(false);
+    }
+  };
+
+  const toggleLinkTabIsOpen = () => {
+    setLinkTabIsOpen((current) => !current);
+
+    if (!linkTabIsOpen) {
+      setNoLinkTabIsOpen(false);
+    }
   };
 
   return (
@@ -38,7 +87,7 @@ export default function DropdownItem(itemList) {
             >
               No Link
             </a>
-            <ul className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
+            <ul ref={noLinkList} className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a href="">Item 1</a>
               </li>
@@ -48,10 +97,20 @@ export default function DropdownItem(itemList) {
             </ul>
           </li>
           <li>
-            <a href="" className={styles.withButtonTab}>
+            <a href="" ref={linkTab} className={styles.withButtonTab}>
               Link
             </a>
-            <button className={styles.openMenuButton}>v</button>
+            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen}>
+              v
+            </button>
+            <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
+              <li>
+                <a href="">Item 1</a>
+              </li>
+              <li>
+                <a href="">Item 2</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
