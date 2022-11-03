@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/" className={"non-highlighted-text"}>
             <Image
               src="/assets/icons/logo.svg"
-              alt="Loga,tillbaka till startsidan"
+              alt="Tillgänglighetskollen,tillbaka till hem"
               width={75}
               height={75}
             />

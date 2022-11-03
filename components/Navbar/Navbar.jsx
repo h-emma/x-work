@@ -12,7 +12,12 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link href="/" className={"non-highlighted-text"}>
-        <Image src="/assets/icons/logo.svg" alt="Loga,tillbaka till startsidan" width={80} height={80} />
+        <Image
+          src="/assets/icons/logo.svg"
+          alt="Tillgänglighetskollen,tillbaka till hem"
+          width={80}
+          height={80}
+        />
       </Link>
 
       <ul className={styles.desktopLinksList}>
@@ -44,7 +49,12 @@ export default function Navbar() {
         </div>
         Meny
       </button>
-      {menuIsOpen && <NavPopUpMenu menuIsOpenState={setMenuIsOpen} openMenuButton={openMenuButton.current} />}
+      {menuIsOpen && (
+        <NavPopUpMenu
+          menuIsOpenState={setMenuIsOpen}
+          openMenuButton={openMenuButton.current}
+        />
+      )}
     </nav>
   );
 }

@@ -12,6 +12,7 @@ import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
 import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
 import ParagrafItem from "../components/Items/ParagrafItem/ParagrafItem";
+import ColorContrastItem from "../components/Items/ColorContrastItem/ColorContrastItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -27,7 +28,13 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
+          <Image
+            src={LogoBG}
+            alt={""}
+            className={styles.logoBG}
+            loading="eager"
+            priority={true}
+          ></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>
@@ -38,6 +45,7 @@ export default function Home() {
           <DropdownItem itemList={itemList} />
           <HeadingItem itemList={itemList} />
           <ParagrafItem itemList={itemList} />
+          <ColorContrastItem itemList={itemList} />
           <ButtonItem itemList={itemList} />
         </section>
       </main>
