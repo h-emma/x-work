@@ -6,8 +6,10 @@ import styles from "./StartSection.module.sass";
 const StartSection = react.forwardRef((props, ref) => {
   return (
     <section className={styles.startSection}>
-      <div className={styles.itemListContainer} ref={ref}>
-        <h2>Innehållsförteckning</h2>
+      <div className={styles.itemListContainer}>
+        <h2 tabIndex={0} ref={ref}>
+          Innehållsförteckning
+        </h2>
         <ul>
           <li>
             <Link
@@ -54,19 +56,18 @@ const StartSection = react.forwardRef((props, ref) => {
               Paragraf
             </Link>
           </li>
-          <li>
-            <Link
-              href="#color-contrast-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("color-contrast-item").focus();
-              }}
-            >
-              Färg kontrast
-            </Link>
-          </li>
+    
           <li>
             <Link href="">Button</Link>
+
+              href="#button-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("paragraf-item").focus();
+              }}
+            >
+              Button
+            </Link>
           </li>
         </ul>
       </div>

@@ -28,25 +28,18 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image
-            src={LogoBG}
-            alt={""}
-            className={styles.logoBG}
-            loading="eager"
-            priority={true}
-          ></Image>
+          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
-          <LinkItem />
-          <DropdownItem />
-          <HeadingItem />
-          <ParagrafItem />
-          <ColorContrastItem />
-          <ButtonItem />
+          <LinkItem itemList={itemList} />
+          <DropdownItem itemList={itemList} />
+          <HeadingItem itemList={itemList} />
+          <ParagrafItem itemList={itemList} />
+          <ButtonItem itemList={itemList} />
         </section>
       </main>
 
