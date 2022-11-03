@@ -2,10 +2,12 @@ import styles from "./ItemCard.module.sass";
 
 export default function ItemCard(props) {
   return (
-    <section className={styles.card} id={props.id}>
+    <section className={styles.card}>
       <div className={styles.infoContainer}>
         <div className={styles.infoHeaderContainer}>
-          <h2 tabindex={0}>{props.name}</h2>
+          <h2 tabIndex={0} id={props.id}>
+            {props.name}
+          </h2>
         </div>
         <div className={styles.infoTextContainer}>
           <>{props.text}</>

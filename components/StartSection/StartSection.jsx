@@ -10,13 +10,25 @@ const StartSection = react.forwardRef((props, ref) => {
         <h2>Innehållsförteckning</h2>
         <ul>
           <li>
-            <Link href="#link-item" scroll={false}>
+            <Link
+              href="#link-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("link-item").focus();
+              }}
+            >
               Link/Anchor
             </Link>
           </li>
 
           <li>
-            <Link href="#dropdown-item" scroll={false}>
+            <Link
+              href="#dropdown-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("dropdown-item").focus();
+              }}
+            >
               Dropdown
             </Link>
           </li>
