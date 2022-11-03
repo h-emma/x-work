@@ -11,6 +11,7 @@ import LinkItem from "../components/Items/LinkItem/LinkItem";
 import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
 import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
+import ParagrafItem from "../components/Items/ParagrafItem/ParagrafItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -42,6 +43,7 @@ export default function Home() {
           <LinkItem />
           <DropdownItem />
           <HeadingItem />
+          <ParagrafItem />
           <ButtonItem />
         </section>
       </main>
