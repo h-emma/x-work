@@ -34,11 +34,11 @@ export default function Home() {
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
-          <LinkItem />
-          <DropdownItem />
-          <HeadingItem />
-          <ParagrafItem />
-          <ButtonItem />
+          <LinkItem itemList={itemList} />
+          <DropdownItem itemList={itemList} />
+          <HeadingItem itemList={itemList} />
+          <ParagrafItem itemList={itemList} />
+          <ButtonItem itemList={itemList} />
         </section>
       </main>
 

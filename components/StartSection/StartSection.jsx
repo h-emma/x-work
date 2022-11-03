@@ -57,7 +57,15 @@ const StartSection = react.forwardRef((props, ref) => {
             </Link>
           </li>
           <li>
-            <Link href="">Button</Link>
+            <Link
+              href="#button-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("paragraf-item").focus();
+              }}
+            >
+              Button
+            </Link>
           </li>
         </ul>
       </div>
