@@ -10,6 +10,8 @@ import LogoBG from "../public/assets/images/logo-bg.svg";
 import LinkItem from "../components/Items/LinkItem/LinkItem";
 import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
+import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
+import ParagrafItem from "../components/Items/ParagrafItem/ParagrafItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -32,9 +34,11 @@ export default function Home() {
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
-          <LinkItem itemList={itemList} />
-          <DropdownItem itemList={itemList} />
-          <ButtonItem itemList={itemList} />
+          <LinkItem />
+          <DropdownItem />
+          <HeadingItem />
+          <ParagrafItem />
+          <ButtonItem />
         </section>
       </main>
 
