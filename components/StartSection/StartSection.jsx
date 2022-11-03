@@ -55,6 +55,17 @@ const StartSection = react.forwardRef((props, ref) => {
             </Link>
           </li>
           <li>
+            <Link
+              href="#color-contrast-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("color-contrast-item").focus();
+              }}
+            >
+              Färg kontrast
+            </Link>
+          </li>
+          <li>
             <Link href="">Button</Link>
           </li>
         </ul>

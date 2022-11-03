@@ -12,6 +12,7 @@ import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
 import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
 import ParagrafItem from "../components/Items/ParagrafItem/ParagrafItem";
+import ColorContrastItem from "../components/Items/ColorContrastItem/ColorContrastItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -44,6 +45,7 @@ export default function Home() {
           <DropdownItem />
           <HeadingItem />
           <ParagrafItem />
+          <ColorContrastItem />
           <ButtonItem />
         </section>
       </main>
