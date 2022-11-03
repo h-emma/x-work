@@ -10,6 +10,7 @@ import LogoBG from "../public/assets/images/logo-bg.svg";
 import LinkItem from "../components/Items/LinkItem/LinkItem";
 import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
+import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -40,6 +41,7 @@ export default function Home() {
         <section className={styles.itemsSection}>
           <LinkItem />
           <DropdownItem />
+          <HeadingItem />
           <ButtonItem />
         </section>
       </main>
