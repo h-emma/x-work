@@ -1,8 +1,13 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 export default function AboutAccessibility() {
+  useEffect(() => {
+    document.body.style.position = "relative";
+  }, []);
+
   return (
     <div>
       <Head>

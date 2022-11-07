@@ -6,7 +6,7 @@ export default function ColorContrastItem(itemList) {
   return (
     <ItemCard
       id="color-contrast-item"
-      name="Color contrast"
+      name="Färgkontrast"
       text={<ColorContrastItemText />}
       itemList={itemList}
     >

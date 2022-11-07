@@ -1,3 +1,4 @@
+import styles from "../../ItemCard/ItemCard.module.sass";
 export default function ColorContrastItemText() {
   return (
     <>
@@ -20,19 +21,19 @@ export default function ColorContrastItemText() {
         </a>
         .
       </p>
-      <p>
+      <p className={styles.sourceParagraph}>
         Källa:{" "}
         <a href="https://webaim.org/resources/contrastchecker/">
           https://webaim.org/resources/contrastchecker/
         </a>
       </p>
-      <p>
+      <p className={styles.sourceParagraph}>
         Källa:{" "}
         <a href=" https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">
           https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
         </a>
       </p>
-      <p>
+      <p className={styles.sourceParagraph}>
         Källa:{" "}
         <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">
           https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast

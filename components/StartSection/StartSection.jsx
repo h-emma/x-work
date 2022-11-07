@@ -19,10 +19,35 @@ const StartSection = react.forwardRef((props, ref) => {
                 document.getElementById("link-item").focus();
               }}
             >
-              Link/Anchor
+              Link
             </Link>
           </li>
-
+          <li>
+            <ul>
+              <li>
+                <Link
+                  href="#link-mailto-item"
+                  scroll={false}
+                  onClick={() => {
+                    document.getElementById("link-mailto-item").focus();
+                  }}
+                >
+                  Link-mailto
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#link-icon-item"
+                  scroll={false}
+                  onClick={() => {
+                    document.getElementById("link-icon-item").focus();
+                  }}
+                >
+                  Link-Icon
+                </Link>
+              </li>
+            </ul>
+          </li>
           <li>
             <Link
               href="#dropdown-item"
@@ -47,13 +72,13 @@ const StartSection = react.forwardRef((props, ref) => {
           </li>
           <li>
             <Link
-              href="#paragraf-item"
+              href="#paragraph-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("paragraf-item").focus();
+                document.getElementById("paragraph-item").focus();
               }}
             >
-              Paragraf
+              Paragraph
             </Link>
           </li>
           <li>
@@ -64,7 +89,7 @@ const StartSection = react.forwardRef((props, ref) => {
                 document.getElementById("color-contrast-item").focus();
               }}
             >
-              Färg kontrast
+              Färgkontrast
             </Link>
           </li>
 
@@ -73,7 +98,7 @@ const StartSection = react.forwardRef((props, ref) => {
               href="#button-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("paragraf-item").focus();
+                document.getElementById("paragraph-item").focus();
               }}
             >
               Button

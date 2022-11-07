@@ -1,13 +1,13 @@
 import ItemCard from "../../ItemCard/ItemCard";
-import styles from "./LinkItem.module.sass";
-import LinkItemText from "./LinkItemText";
+import styles from "./LinkIconItem.module.sass";
+import LinkIconItemText from "./LinkIconItemText";
 
-export default function LinkItem(itemList) {
+export default function LinkIconItem(itemList) {
   return (
     <ItemCard
-      id="link-item"
-      name="Link"
-      text={<LinkItemText />}
+      id="link-icon-item"
+      name="Link-Icon"
+      text={<LinkIconItemText />}
       itemList={itemList}
     >
       <div className={styles.itemExampleContainer}>

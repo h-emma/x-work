@@ -1,7 +1,8 @@
+import styles from "../../ItemCard/ItemCard.module.sass";
+
 export default function LinkItemText() {
   return (
     <>
-      <h4>Allmänt om länkar</h4>
       <p>
         När man använder länkar &lt;a&gt;&lt;/a&gt; på en hemsida behöver dessa
         se ut och fungera på ett visst sätt för att göra hemsidan tillgänglig
@@ -18,12 +19,7 @@ export default function LinkItemText() {
         tydliggörs med pseudoklasser och går att läsa mer om längre ner på
         sidan.
       </p>
-      <a href="https://webbriktlinjer.se/riktlinjer/5-skriv-tydliga-lankar/">
-        Källa
-      </a>
-      <a href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context">
-        Källa
-      </a>
+
       <p>
         Länkar öppnas i standard i samma fönster. Det är något som är
         omdiskuterat huruvida det ska vara så eller inte. Att låta användare
@@ -34,38 +30,25 @@ export default function LinkItemText() {
         överraskad därav kan det vara bra att skriva i länktexten att den kommer
         öppnas i en ny flik.
       </p>
-      <a href="https://www.a11y-collective.com/the-perfect-link/">Källa</a>
-      <h4>Mail länk</h4>
-      <p>
-        Många hemsidor har någonstans på sin sida en länk till sin mail och
-        dessa kan se olika ut. När det gäller tillgänglighet finns det några
-        saker att tänka på.
+
+      <p className={styles.sourceParagraph}>
+        Källa:{" "}
+        <a href="https://webbriktlinjer.se/riktlinjer/5-skriv-tydliga-lankar/">
+          https://webbriktlinjer.se/riktlinjer/5-skriv-tydliga-lankar/
+        </a>
       </p>
-      <p>
-        &lt;a
-        href=&quot;mailto:en-mail-adress@mail.com&quot;&gt;Adressen&lt;/a&gt; Så
-        ser koden ut för att länka till en mailadress. Om användaren har en
-        mailklient lokalt på datorn exempelvis Apple Mail på Mac eller Outlook
-        öppnas en sådan länk där. Använder användaren istället en webbaserad
-        klient kommer länken öppnas i webbläsaren som en vanlig länk. Som nämt
-        innan i stycket om allmänt om länkar öppnas även denna länk
-        standardiserat i samma fönster. Det kan vara till fördel att skicka ut
-        mailadressen och inte enbart ”Maila till oss”. Detta då det ger
-        användare möjlighet att kopiera mailadressen och göra det på en annan
-        device eller vid ett senare tillfälle.
+      <p className={styles.sourceParagraph}>
+        Källa:{" "}
+        <a href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context/">
+          https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context/
+        </a>
       </p>
-      <a href="https://css-tricks.com/all-about-mailto-links/">Källa</a>
-      <a href="https://www.a11y-collective.com/the-perfect-link/">Källa</a>
-      <h4>Ikon som länk</h4>
-      <p>
-        Iconer som länkar använts flitigt tillexempel för Instagram och
-        Facebook. För användare med skärmläsare behöver dessa tydliggöras, både
-        vad det föreställer men också vart personen blir omdirigerad till. Sätt
-        att göra det på är att länga till texten Instagram till ikonen, låta
-        ikonen vara en &lt;img&gt; och lägga till en alt=&quot;&quot; eller en
-        aria-label=&quot;&quot;.
+      <p className={styles.sourceParagraph}>
+        Källa:{" "}
+        <a href="https://www.a11y-collective.com/the-perfect-link/">
+          https://www.a11y-collective.com/the-perfect-link/
+        </a>
       </p>
-      <a href="https://www.a11y-collective.com/the-perfect-link/">Källa</a>
     </>
   );
 }

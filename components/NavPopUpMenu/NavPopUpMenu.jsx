@@ -7,6 +7,7 @@ export default function NavPopUpMenu({ menuIsOpenState, openMenuButton }) {
 
   useEffect(() => {
     homeLink.current.focus();
+    document.body.style.position = "fixed";
   }, []);
 
   return (
@@ -19,6 +20,7 @@ export default function NavPopUpMenu({ menuIsOpenState, openMenuButton }) {
           onClick={() => {
             menuIsOpenState(false);
             openMenuButton.focus();
+            document.body.style.position = "relative";
           }}
           className={styles.closeButton}
         >

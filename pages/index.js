@@ -10,11 +10,17 @@ import LinkItem from "../components/Items/LinkItem/LinkItem";
 import { useEffect, useRef } from "react";
 import DropdownItem from "../components/Items/DropdownItem/DropdownItem";
 import HeadingItem from "../components/Items/HeadingItem/HeadingItem";
-import ParagrafItem from "../components/Items/ParagrafItem/ParagrafItem";
+import ParagraphItem from "../components/Items/ParagraphItem/ParagraphItem";
 import ColorContrastItem from "../components/Items/ColorContrastItem/ColorContrastItem";
+import LinkIconItem from "../components/Items/LinkIconItem/LinkIconItem";
+import LinkMailToItem from "../components/Items/LinkMailToItem/LinkMailToItem";
 
 export default function Home() {
   const itemList = useRef(null);
+
+  useEffect(() => {
+    document.body.style.position = "relative";
+  }, []);
 
   return (
     <>
@@ -41,9 +47,11 @@ export default function Home() {
         </div>
         <section className={styles.itemsSection}>
           <LinkItem itemList={itemList} />
+          <LinkMailToItem itemList={itemList} />
+          <LinkIconItem itemList={itemList} />
           <DropdownItem itemList={itemList} />
           <HeadingItem itemList={itemList} />
-          <ParagrafItem itemList={itemList} />
+          <ParagraphItem itemList={itemList} />
           <ColorContrastItem itemList={itemList} />
           <ButtonItem itemList={itemList} />
         </section>

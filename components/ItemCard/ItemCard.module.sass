@@ -9,7 +9,6 @@
     overflow: hidden
     box-shadow: $main-box-shadow
 
-
 .infoContainer
     min-height: 200px
     background-color: white
@@ -18,6 +17,17 @@
         margin: $page-gutter-size
         font-family: Poppins
         font-size: 16px
+        line-height: 24px
+    
+    .sourceParagraph
+        font-size: 12px
+        margin: 2px 24px
+    
+    a
+        text-decoration: underline
+        word-wrap: break-word
+    
+
 
 .infoHeaderContainer
     display: flex
@@ -27,15 +37,23 @@
     height: 50px
     
     h3
-        margin: 0 $page-gutter-size
+        margin: 0 calc($page-gutter-size - 6px)
         color: white
         font-size: 20px
         scroll-margin-top: 24px
+        padding: 6px
+        border-radius: 6px
+    
+    h3:focus-visible
+        outline: 2px solid white
     
     a
         margin: 0 $page-gutter-size
         color: white
         text-decoration: underline
+
+    a:focus-visible
+        outline: 2px solid white
 
 .componentContainer
     display: flex
@@ -53,7 +71,9 @@
     .infoContainer
         width: 50%
         p
-        font-size: 14px
+            font-size: 16px
+        .sourceParagraph
+            font-size: 14px
 
     .componentContainer
         width: 50%
