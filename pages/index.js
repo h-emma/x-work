@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 import ButtonItem from "../components/Items/ButtonItem/ButtonItem";
 import styles from "../styles/Home.module.sass";
 import StartSection from "../components/StartSection/StartSection";
@@ -51,7 +50,6 @@ export default function Home() {
       </main>
 
       <Footer></Footer>
-      <ScrollToTopButton itemList={itemList}></ScrollToTopButton>
     </>
   );
 }
