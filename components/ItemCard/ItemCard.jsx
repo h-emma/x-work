@@ -14,9 +14,9 @@ export default function ItemCard(props) {
     <section className={styles.card}>
       <div className={styles.infoContainer}>
         <div className={styles.infoHeaderContainer}>
-          <h2 tabIndex={0} id={props.id}>
+          <h3 tabIndex={0} id={props.id}>
             {props.name}
-          </h2>
+          </h3>
           <Link
             href=""
             className={"non-highlighted-text"}

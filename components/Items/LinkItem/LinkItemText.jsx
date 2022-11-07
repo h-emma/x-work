@@ -1,7 +1,7 @@
 export default function LinkItemText() {
   return (
     <>
-      <h3>Allmänt om länkar</h3>
+      <h4>Allmänt om länkar</h4>
       <p>
         När man använder länkar &lt;a&gt;&lt;/a&gt; på en hemsida behöver dessa
         se ut och fungera på ett visst sätt för att göra hemsidan tillgänglig
@@ -35,7 +35,7 @@ export default function LinkItemText() {
         öppnas i en ny flik.
       </p>
       <a href="https://www.a11y-collective.com/the-perfect-link/">Källa</a>
-      <h3>Mail länk</h3>
+      <h4>Mail länk</h4>
       <p>
         Många hemsidor har någonstans på sin sida en länk till sin mail och
         dessa kan se olika ut. När det gäller tillgänglighet finns det några
@@ -56,7 +56,7 @@ export default function LinkItemText() {
       </p>
       <a href="https://css-tricks.com/all-about-mailto-links/">Källa</a>
       <a href="https://www.a11y-collective.com/the-perfect-link/">Källa</a>
-      <h3>Ikon som länk</h3>
+      <h4>Ikon som länk</h4>
       <p>
         Iconer som länkar använts flitigt tillexempel för Instagram och
         Facebook. För användare med skärmläsare behöver dessa tydliggöras, både
