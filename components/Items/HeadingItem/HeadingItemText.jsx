@@ -38,13 +38,13 @@ export default function HeadingItemText() {
         troligtvis inte en heading och ska inte inte heller styles som en.
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/">
           https://www.a11yproject.com/posts/how-to-accessible-heading-structure/
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">
           https://www.w3.org/WAI/tutorials/page-structure/headings/
         </a>

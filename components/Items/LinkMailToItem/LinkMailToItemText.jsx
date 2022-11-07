@@ -22,13 +22,13 @@ export default function LinkItemText() {
         device eller vid ett senare tillfälle.
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://css-tricks.com/all-about-mailto-links/">
           https://css-tricks.com/all-about-mailto-links/
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://www.a11y-collective.com/the-perfect-link/">
           https://www.a11y-collective.com/the-perfect-link/
         </a>

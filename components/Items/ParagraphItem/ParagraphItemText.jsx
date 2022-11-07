@@ -36,25 +36,25 @@ export default function ParagrafItemText() {
         fönster.
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://accessibility.huit.harvard.edu/accessibility-topics/text">
           https://accessibility.huit.harvard.edu/accessibility-topics/text
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://accessibility.psu.edu/headingshtml/">
           https://accessibility.psu.edu/headingshtml/
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://www.w3.org/TR/WCAG21/">
           https://www.w3.org/TR/WCAG21/
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://medium.com/accessibility-a11y/5-best-html-practices-for-improving-web-page-accessibility-5870af65e979">
           https://medium.com/accessibility-a11y/5-best-html-practices-for-improving-web-page-accessibility-5870af65e979
         </a>

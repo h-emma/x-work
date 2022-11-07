@@ -12,7 +12,7 @@ export default function LinkItemText() {
       </p>
 
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://www.a11y-collective.com/the-perfect-link/">
           https://www.a11y-collective.com/the-perfect-link/
         </a>

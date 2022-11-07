@@ -12,7 +12,7 @@ export default function LinkMailToItem(itemList) {
     >
       <div className={styles.itemExampleContainer}>
         <div className={styles.text}>
-          &lt;a&gt;Detta är ett länkelement&lt;/a&gt;
+          &lt;a href=&quot;mailto:exempel@mail.se&quot;&gt;...&lt;/a&gt;
         </div>
       </div>
     </ItemCard>

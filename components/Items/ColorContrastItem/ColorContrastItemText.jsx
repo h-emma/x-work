@@ -15,26 +15,26 @@ export default function ColorContrastItemText() {
       </p>
       <p>
         På webben finns det en del verktyg som underlättar testning av färg
-        kontraster och deras ratio. Ett sådan verktyg är WebAIM’s{" "}
+        kontraster och deras ratio. Ett sådan verktyg är WebAIM’s{""}
         <a href="https://webaim.org/resources/contrastchecker/">
           Color Contrast Checker
         </a>
         .
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://webaim.org/resources/contrastchecker/">
           https://webaim.org/resources/contrastchecker/
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href=" https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">
           https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
         </a>
       </p>
       <p className={styles.sourceParagraph}>
-        Källa:{" "}
+        Källa:{""}
         <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">
           https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast
         </a>
