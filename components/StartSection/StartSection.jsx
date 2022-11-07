@@ -8,7 +8,7 @@ const StartSection = react.forwardRef((props, ref) => {
     <section className={styles.startSection}>
       <div className={styles.itemListContainer}>
         <h2 tabIndex={0} ref={ref}>
-          Innehållsförteckning
+          Index
         </h2>
         <ul>
           <li>

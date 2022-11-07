@@ -8,6 +8,7 @@ export default function ItemCard(props) {
   const scrollToTop = () => {
     props.itemList.itemList.current.scrollIntoView({ behavior: "smooth" });
     props.itemList.itemList.current.focus();
+    props.itemList.itemList.current.blur();
   };
 
   return (
@@ -26,7 +27,7 @@ export default function ItemCard(props) {
               scrollToTop();
             }}
           >
-            Innehållsförteckning
+            Index
           </Link>
         </div>
         <div className={styles.infoTextContainer}>
