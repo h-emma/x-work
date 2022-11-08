@@ -98,10 +98,22 @@ const StartSection = react.forwardRef((props, ref) => {
               href="#button-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("paragraph-item").focus();
+                document.getElementById("button-item").focus();
               }}
             >
               Button
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="#form-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("form-item").focus();
+              }}
+            >
+              Form
             </Link>
           </li>
         </ul>

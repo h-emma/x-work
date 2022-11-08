@@ -14,6 +14,7 @@ import ParagraphItem from "../components/Items/ParagraphItem/ParagraphItem";
 import ColorContrastItem from "../components/Items/ColorContrastItem/ColorContrastItem";
 import LinkIconItem from "../components/Items/LinkIconItem/LinkIconItem";
 import LinkMailToItem from "../components/Items/LinkMailToItem/LinkMailToItem";
+import FormItem from "../components/Items/FormItem/FormItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -33,13 +34,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image
-            src={LogoBG}
-            alt={""}
-            className={styles.logoBG}
-            loading="eager"
-            priority={true}
-          ></Image>
+          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>
@@ -54,6 +49,7 @@ export default function Home() {
           <ParagraphItem itemList={itemList} />
           <ColorContrastItem itemList={itemList} />
           <ButtonItem itemList={itemList} />
+          <FormItem itemList={itemList} />
         </section>
       </main>
 
