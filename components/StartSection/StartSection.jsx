@@ -13,72 +13,13 @@ const StartSection = react.forwardRef((props, ref) => {
         <ul>
           <li>
             <Link
-              href="#link-item"
+              href="#button-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("link-item").focus();
+                document.getElementById("button-item").focus();
               }}
             >
-              Link
-            </Link>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <Link
-                  href="#link-mailto-item"
-                  scroll={false}
-                  onClick={() => {
-                    document.getElementById("link-mailto-item").focus();
-                  }}
-                >
-                  Link-mailto
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#link-icon-item"
-                  scroll={false}
-                  onClick={() => {
-                    document.getElementById("link-icon-item").focus();
-                  }}
-                >
-                  Link-Icon
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <Link
-              href="#dropdown-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("dropdown-item").focus();
-              }}
-            >
-              Dropdown
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#heading-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("heading-item").focus();
-              }}
-            >
-              Heading
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#paragraph-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("paragraph-item").focus();
-              }}
-            >
-              Paragraph
+              Button
             </Link>
           </li>
           <li>
@@ -95,13 +36,25 @@ const StartSection = react.forwardRef((props, ref) => {
 
           <li>
             <Link
-              href="#button-item"
+              href="#dropdown-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("button-item").focus();
+                document.getElementById("dropdown-item").focus();
               }}
             >
-              Button
+              Dropdown
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="#link-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("link-item").focus();
+              }}
+            >
+              Link
             </Link>
           </li>
 
@@ -114,6 +67,58 @@ const StartSection = react.forwardRef((props, ref) => {
               }}
             >
               Form
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="#heading-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("heading-item").focus();
+              }}
+            >
+              Heading
+            </Link>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <Link
+                  href="#link-icon-item"
+                  scroll={false}
+                  onClick={() => {
+                    document.getElementById("link-icon-item").focus();
+                  }}
+                >
+                  Link-Icon
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="#link-mailto-item"
+                  scroll={false}
+                  onClick={() => {
+                    document.getElementById("link-mailto-item").focus();
+                  }}
+                >
+                  Link-mailto
+                </Link>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <Link
+              href="#paragraph-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("paragraph-item").focus();
+              }}
+            >
+              Paragraph
             </Link>
           </li>
         </ul>

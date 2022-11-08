@@ -41,15 +41,15 @@ export default function Home() {
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
-          <LinkItem itemList={itemList} />
-          <LinkMailToItem itemList={itemList} />
-          <LinkIconItem itemList={itemList} />
-          <DropdownItem itemList={itemList} />
-          <HeadingItem itemList={itemList} />
-          <ParagraphItem itemList={itemList} />
-          <ColorContrastItem itemList={itemList} />
           <ButtonItem itemList={itemList} />
+          <ColorContrastItem itemList={itemList} />
+          <DropdownItem itemList={itemList} />
           <FormItem itemList={itemList} />
+          <HeadingItem itemList={itemList} />
+          <LinkItem itemList={itemList} />
+          <LinkIconItem itemList={itemList} />
+          <LinkMailToItem itemList={itemList} />
+          <ParagraphItem itemList={itemList} />
         </section>
       </main>
 
