@@ -5,7 +5,13 @@ import FormItemText from "./FormItemText";
 export default function FormItem(itemList) {
   return (
     <ItemCard id="form-item" name="Form" text={<FormItemText />} itemList={itemList}>
-      <form action="" className={styles.form}>
+      <form
+        action=""
+        onSubmit={(e) => {
+          console.log(e);
+        }}
+        className={styles.form}
+      >
         <h4>Logga in</h4>
         <fieldset className={styles.fieldset}>
           <legend>Inloggningsdetaljer</legend>
@@ -15,7 +21,7 @@ export default function FormItem(itemList) {
           </div>
           <div className={styles.inputAndLabelContainer}>
             <label htmlFor="password">Lösenord</label>
-            <input type="password" name="password" id="password" required minlength="6" />
+            <input type="password" name="password" id="password" required minLength="6" />
           </div>
         </fieldset>
         <button type="submit">Logga in</button>
