@@ -7,12 +7,12 @@ export default function ColorContrastItem(itemList) {
     <ItemCard id="color-contrast-item" name="Färgkontrast" text={<ColorContrastItemText />} itemList={itemList}>
       <div className={styles.itemExampleContainer}>
         <div className={styles.text}>
-          <p>Kontrast</p>
-          <p>Kontrast</p>
-          <p>Kontrast</p>
-          <p>Kontrast</p>
-          <p>Kontrast</p>
-          <p>Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
+          <p aria-hidden="true">Kontrast</p>
         </div>
       </div>
     </ItemCard>
