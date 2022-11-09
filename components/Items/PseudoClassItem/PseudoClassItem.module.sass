@@ -1,0 +1,27 @@
+@import 'styles/colors'
+@import 'styles/screenSize'
+
+.itemExampleContainer
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: white
+  border-radius: 1000px
+  font-family: JetBrainsMono
+  width: clamp(0px, 80%,  400px)
+  aspect-ratio: 400/70
+  button
+    border: none
+    width: 88px
+    height: 44px
+    background-color: #3c49ff
+    color: white
+    font-size: 12px
+    font-family: poppins
+    border-radius: 3px
+    cursor: pointer
+  button:hover
+      background-color: #5964ff
+    
+  button:focus-visible
+    outline: 2px solid black  
