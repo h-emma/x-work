@@ -42,18 +42,6 @@ const StartSection = react.forwardRef((props, ref) => {
           </li>
           <li>
             <Link
-              href="#color-contrast-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("color-contrast-item").focus();
-              }}
-            >
-              Färgkontrast
-            </Link>
-          </li>
-
-          <li>
-            <Link
               href="#dropdown-item"
               scroll={false}
               onClick={() => {
@@ -63,19 +51,6 @@ const StartSection = react.forwardRef((props, ref) => {
               Dropdown
             </Link>
           </li>
-
-          <li>
-            <Link
-              href="#link-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("link-item").focus();
-              }}
-            >
-              Link
-            </Link>
-          </li>
-
           <li>
             <Link
               href="#form-item"
@@ -87,7 +62,17 @@ const StartSection = react.forwardRef((props, ref) => {
               Form
             </Link>
           </li>
-
+          <li>
+            <Link
+              href="#color-contrast-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("color-contrast-item").focus();
+              }}
+            >
+              Färgkontrast
+            </Link>
+          </li>
           <li>
             <Link
               href="#heading-item"
@@ -99,7 +84,28 @@ const StartSection = react.forwardRef((props, ref) => {
               Heading
             </Link>
           </li>
-
+          <li>
+            <Link
+              href="#image-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("image-item").focus();
+              }}
+            >
+              Image
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="#link-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("link-item").focus();
+              }}
+            >
+              Link
+            </Link>
+          </li>
           <li>
             <ul>
               <li>

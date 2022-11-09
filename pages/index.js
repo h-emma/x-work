@@ -16,6 +16,7 @@ import LinkIconItem from "../components/Items/LinkIconItem/LinkIconItem";
 import LinkMailToItem from "../components/Items/LinkMailToItem/LinkMailToItem";
 import FormItem from "../components/Items/FormItem/FormItem";
 import AnimationItem from "../components/Items/AnimationItem/AnimationItem";
+import ImageItem from "../components/Items/ImageItem/ImageItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -35,7 +36,13 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
+          <Image
+            src={LogoBG}
+            alt={""}
+            className={styles.logoBG}
+            loading="eager"
+            priority={true}
+          ></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>
@@ -48,6 +55,7 @@ export default function Home() {
           <DropdownItem itemList={itemList} />
           <FormItem itemList={itemList} />
           <HeadingItem itemList={itemList} />
+          <ImageItem itemList={itemList} />
           <LinkItem itemList={itemList} />
           <LinkIconItem itemList={itemList} />
           <LinkMailToItem itemList={itemList} />
