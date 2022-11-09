@@ -4,8 +4,15 @@ import ButtonItemText from "./ButtonItemText";
 
 export default function ButtonItem(itemList) {
   return (
-    <ItemCard id="button-item" name="Button" text={<ButtonItemText />} itemList={itemList}>
-      <button>A Button</button>
+    <ItemCard
+      id="button-item"
+      name="Button"
+      text={<ButtonItemText />}
+      itemList={itemList}
+    >
+      <div className={styles.itemExampleContainer}>
+        <button type="button">Button</button>
+      </div>
     </ItemCard>
   );
 }
