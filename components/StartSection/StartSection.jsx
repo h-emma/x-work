@@ -6,7 +6,14 @@ import styles from "./StartSection.module.sass";
 const StartSection = react.forwardRef((props, ref) => {
   return (
     <section className={styles.startSection}>
-      <div className={styles.itemListContainer}>
+      <article className={styles.article}>
+        <div className={styles.articleHeaderContainer}>
+          <h1>Tillgänglighet</h1>
+        </div>
+        <StartSectionText />
+      </article>
+
+      <section className={styles.itemListContainer}>
         <h2 tabIndex={0} ref={ref}>
           Index
         </h2>
@@ -122,13 +129,7 @@ const StartSection = react.forwardRef((props, ref) => {
             </Link>
           </li>
         </ul>
-      </div>
-      <article className={styles.article}>
-        <div className={styles.articleHeaderContainer}>
-          <h1>Tillgänglighet</h1>
-        </div>
-        <StartSectionText />
-      </article>
+      </section>
     </section>
   );
 });
