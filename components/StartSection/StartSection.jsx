@@ -145,6 +145,17 @@ const StartSection = react.forwardRef((props, ref) => {
               Paragraph
             </Link>
           </li>
+          <li>
+            <Link
+              href="#pseudo-class-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("paragraph-item").focus();
+              }}
+            >
+              Pseudo-class
+            </Link>
+          </li>
         </ul>
       </section>
     </section>
