@@ -15,6 +15,7 @@ import ColorContrastItem from "../components/Items/ColorContrastItem/ColorContra
 import LinkIconItem from "../components/Items/LinkIconItem/LinkIconItem";
 import LinkMailToItem from "../components/Items/LinkMailToItem/LinkMailToItem";
 import FormItem from "../components/Items/FormItem/FormItem";
+import AnimationItem from "../components/Items/AnimationItem/AnimationItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -41,6 +42,7 @@ export default function Home() {
           <h2>Komponenter</h2>
         </div>
         <section className={styles.itemsSection}>
+          <AnimationItem itemList={itemList} />
           <ButtonItem itemList={itemList} />
           <ColorContrastItem itemList={itemList} />
           <DropdownItem itemList={itemList} />

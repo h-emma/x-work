@@ -20,6 +20,17 @@ const StartSection = react.forwardRef((props, ref) => {
         <ul>
           <li>
             <Link
+              href="#animation-item"
+              scroll={false}
+              onClick={() => {
+                document.getElementById("animation-item").focus();
+              }}
+            >
+              Animationer
+            </Link>
+          </li>
+          <li>
+            <Link
               href="#button-item"
               scroll={false}
               onClick={() => {

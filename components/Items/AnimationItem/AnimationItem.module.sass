@@ -1,0 +1,37 @@
+@import 'styles/colors'
+@import 'styles/screenSize'
+
+.animationContainer
+    position: relative
+    width: 90%
+    max-width: 400px
+    height: 200px
+    background-color: $dark-detail-color
+    margin: 12px
+    border-radius: 24px
+
+.animatedShape
+    position: absolute
+    border: 24px solid $dark-detail-color
+    border-radius: 36px
+    left: 0
+    top: 50%
+    transform: translate(-50%)
+    width: 160px
+    height: 160px
+    background-color: $hero-bg-color
+    animation-name: moveShape
+    animation-duration: 4s
+    animation-direction: alternate
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+
+@keyframes moveShape 
+  from
+    left: 0
+    transform: translate(0%, -50%)
+  to 
+    left: 100%
+    transform: translate(-100%, -50%)
+
+    
