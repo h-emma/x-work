@@ -71,15 +71,28 @@ export default function DropdownItem(itemList) {
   };
 
   return (
-    <ItemCard id="dropdown-item" name="Dropdown" text={<DropdownItemText />} itemList={itemList}>
+    <ItemCard
+      id="dropdown-item"
+      name="Dropdown"
+      text={<DropdownItemText />}
+      itemList={itemList}
+    >
       <nav className={styles.navContainer}>
         <ul className={styles.parentList}>
           <li>
-            <a href="">No Drop-down</a>
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                alert("You clicked a link.");
+              }}
+            >
+              No Drop-down
+            </a>
           </li>
           <li>
             <a
-              href=""
+              href="#"
               ref={noLinkTab}
               className={styles.noLinkTab}
               style={{ textDecoration: "none" }}
@@ -87,28 +100,77 @@ export default function DropdownItem(itemList) {
             >
               No Link
             </a>
-            <ul ref={noLinkList} className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
+            <ul
+              ref={noLinkList}
+              className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}
+            >
               <li>
-                <a href="">Item 1</a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    alert("You clicked a link.");
+                  }}
+                >
+                  Item 1
+                </a>
               </li>
               <li>
-                <a href="">Item 2</a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    alert("You clicked a link.");
+                  }}
+                >
+                  Item 2
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="" ref={linkTab} className={styles.withButtonTab}>
+            <a
+              href="#"
+              ref={linkTab}
+              onClick={(e) => {
+                e.preventDefault();
+                alert("You clicked a link.");
+              }}
+              className={styles.withButtonTab}
+            >
               Link
             </a>
-            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen}>
+            <button
+              className={styles.openMenuButton}
+              onClick={toggleLinkTabIsOpen}
+            >
               v
             </button>
-            <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
+            <ul
+              ref={linkList}
+              className={linkTabIsOpen ? styles.displayNoLinkList : ""}
+            >
               <li>
-                <a href="">Item 1</a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    alert("You clicked a link.");
+                  }}
+                >
+                  Item 1
+                </a>
               </li>
               <li>
-                <a href="">Item 2</a>
+                <a
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    alert("You clicked a link.");
+                  }}
+                >
+                  Item 2
+                </a>
               </li>
             </ul>
           </li>
