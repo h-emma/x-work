@@ -11,7 +11,18 @@ export default function PseudoClassItem(itemList) {
       itemList={itemList}
     >
       <div className={styles.itemExampleContainer}>
-        <button type="button">Button</button>
+        <button type="button" className={styles.hover}>
+          {" "}
+          :hover
+        </button>
+        <button type="button" className={styles.focus}>
+          {" "}
+          :focus
+        </button>
+        <button type="button" className={styles.active}>
+          {" "}
+          :active
+        </button>
       </div>
     </ItemCard>
   );

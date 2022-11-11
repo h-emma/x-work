@@ -3,7 +3,8 @@
 
 .itemExampleContainer
   display: flex
-  justify-content: center
+  flex-direction: column
+  
   align-items: center
   background-color: white
   border-radius: 1000px
@@ -20,8 +21,12 @@
     font-family: poppins
     border-radius: 3px
     cursor: pointer
-  button:hover
-      background-color: #5964ff
+    margin: 8px
+.hover:hover
+  background-color: #5964ff
     
-  button:focus-visible
-    outline: 2px solid black  
+.focus:focus
+  outline: 3px solid black
+
+.active:active
+  background-color: red
