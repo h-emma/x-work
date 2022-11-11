@@ -10,9 +10,17 @@ export default function Navbar(props) {
   const openMenuButton = useRef(null);
 
   return (
-    <nav className={styles.nav} style={{ backgroundColor: props.backgroundColor }}>
+    <nav
+      className={styles.nav}
+      style={{ backgroundColor: props.backgroundColor }}
+    >
       <Link href="/" className={"non-highlighted-text"}>
-        <Image src="/assets/icons/logo.svg" alt="Tillgänglighetskollen,tillbaka till hem" width={80} height={80} />
+        <Image
+          src="/assets/icons/logo.svg"
+          alt="Tillgänglighetskollen,tillbaka till hem"
+          width={80}
+          height={80}
+        />
       </Link>
 
       <ul className={styles.desktopLinksList}>

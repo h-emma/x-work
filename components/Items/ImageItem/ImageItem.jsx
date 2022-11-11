@@ -14,10 +14,11 @@ export default function ImageItem(itemList) {
       <div className={styles.itemExampleContainer}>
         <Image
           className={styles.imageContainer}
-          src={"/assets/images/exempel_image_unsplash.jpg"}
+          src={"/assets/images/accessible_entry.webp"}
           alt="En tegelväg med en skylt med texten Accessible Entry"
           width={250}
           height={150}
+          priority={true}
         />
         <p className={styles.text}>
           Bild är från{""}
