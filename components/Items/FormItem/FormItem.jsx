@@ -4,7 +4,12 @@ import FormItemText from "./FormItemText";
 
 export default function FormItem(itemList) {
   return (
-    <ItemCard id="form-item" name="Form" text={<FormItemText />} itemList={itemList}>
+    <ItemCard
+      id="form-item"
+      name="Form"
+      text={<FormItemText />}
+      itemList={itemList}
+    >
       <form
         action=""
         onSubmit={(e) => {
@@ -25,7 +30,14 @@ export default function FormItem(itemList) {
           <div className={styles.inputAndLabelContainer}>
             <label htmlFor="password">Lösenord</label>
             <div>
-              <input type="password" name="password" id="password" required minLength="8" /> *
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                minLength="8"
+              />{" "}
+              *
             </div>
             <p>Lösenord måste vara minst 8 tecken.</p>
           </div>
@@ -33,7 +45,7 @@ export default function FormItem(itemList) {
         <button type="submit">Registrera</button>
         <div className={styles.signUpContainer}>
           <p>Redan registrerad?</p>
-          <a href="">Logga in</a>
+          <a href="#">Logga in</a>
         </div>
       </form>
     </ItemCard>
