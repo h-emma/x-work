@@ -44,7 +44,13 @@ export default function Navbar(props) {
         </div>
         Meny
       </button>
-      {menuIsOpen && <NavPopUpMenu menuIsOpenState={setMenuIsOpen} openMenuButton={openMenuButton.current} />}
+      {menuIsOpen && (
+        <NavPopUpMenu
+          menuIsOpenState={setMenuIsOpen}
+          openMenuButton={openMenuButton.current}
+          pageIndex={props.pageIndex}
+        />
+      )}
     </nav>
   );
 }
