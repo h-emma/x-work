@@ -16,10 +16,11 @@ export default function AnimationItemText() {
         Enligt WCAG 2.1 ska all information som på något sätt rör sig, blinkar eller scrollar kunna stängas av, döljas
         eller pausas. Detta gäller dock bara om allt av det följande är sant:
       </p>
-      <p>
-        Att det som rör sig startar automatiskt. Att det håller på längre än 5 sekunder. Att det presenteras tillsammans
-        med annat innehåll på sidan.
-      </p>
+      <ul style={{ listStyle: "square", paddingLeft: "16px" }}>
+        <li>Att det som rör sig startar automatiskt.</li>
+        <li>Att det håller på längre än 5 sekunder.</li>
+        <li>Att det presenteras tillsammans med annat innehåll på sidan.</li>
+      </ul>
       <p>
         Det finns också regler att följa gällande blinkande innehåll, där en gräns på tre blinkningar per sekund inte
         ska överskridas, då de kan framkalla epileptiska anfall hos en del användare.
