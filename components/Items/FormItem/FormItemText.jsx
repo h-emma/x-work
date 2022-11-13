@@ -9,34 +9,34 @@ export default function LinkItemText() {
         än användaruppgifter. Oftas skickas denna datan till en server för vidare bearbetning.
       </p>
       <p>
-        Form-elementet i sig är en behållare som kan innehålla olika input-element, såsom textfält, checkboxar, toggles
+        Formelementet i sig är en behållare som kan innehålla olika inputelement, såsom textfält, checkboxar, toggles
         och andra sätt som en användare kan göra val och mata in data.
       </p>
       <h4>Validering</h4>
       <p>
         Inte sällan finns det restriktioner på vad för data som får matas in eller inte, samt om det saknas data som är
-        viktig för hemsidan att ha. T.ex. att ett inmatningsfält är tvungen att vara en e-mailadress, eller att ett
-        lösenord måste innehålla en viss sorts tecken eller ha en viss längd. Detta kallas validering.
+        viktig för hemsidan att ha. Till exempel att ett inmatningsfält är tvungen att vara en e-mailadress, eller att
+        ett lösenord måste innehålla en viss sorts tecken eller ha en viss längd. Detta kallas validering.
       </p>
       <h4>Tillgänglighet</h4>
       <p>För att en form ska vara så tillgänglig som möjligt finns det några saker man bör tänka på:</p>
       <p>För att öppna en meny med tangentbord finns i princip två sätt:</p>
       <p>
-        Ett input-element ska alltid vara kopplat till ett label-element för att tydligt visa vilken sorts data som
-        förväntas av användaren. Detta är viktigt både visuellt och för en skärmläsare. Ibland används även en s.k.
+        Ett inputelement ska alltid vara kopplat till ett labelelement för att tydligt visa vilken sorts data som
+        förväntas av användaren. Detta är viktigt både visuellt och för en skärmläsare. Ibland används även en så kallad
         “placeholder”-text inuti ett textfält för att visa användare ett exempel på data som ska matas in. Detta kan man
         ha, men då vissa skärmläsare inte läser av dessa, är det fortfarande viktigt att använda labels.
       </p>
-      <p>Alla input-element måste vara manövrerbara och kunna interagera med tangentbordet.</p>
+      <p>Alla inputelement måste vara manövrerbara och kunna interagera med tangentbordet.</p>
       <p>
-        Använd ett fieldset-element för att gruppera olika input-element som hör samman. Fieldset-elementet ska
-        innehålla ett legend-element—en slags heading för fieldset-elementet—som även den övergripande beskriver vad som
-        förväntas av användaren att fylla i.
+        Använd ett fieldsetelement för att gruppera olika inputelement som hör samman. Fieldsetelementet ska innehålla
+        ett legendelement som fungerar som en slags heading för fieldsetelementet som även den övergripande beskriver
+        vad som förväntas av användaren att fylla i.
       </p>
       <p>
         Om din form använder sig av validering av datan, ska det alltid finnas tydliga felmeddelanden om vad som gått
-        fel, skulle användaren mata in saker på fel sätt. I html5 finns numera frontend-validering inbyggt och man kan
-        definiera dessa i input-elementen när man skapar sidan. Det är dock upp till webbläsaren att implementera själva
+        fel, skulle användaren mata in saker på fel sätt. I html5 finns numera frontendvalidering inbyggt och man kan
+        definiera dessa i inputelementen när man skapar sidan. Det är dock upp till webbläsaren att implementera själva
         felmeddelandena, vilket gör att olika webbläsare och olika enheter är olika bra på att visa användaren vad som
         gick fel. Om tid och möjlighet finns kan det fortfarande vara lämpligt att komplettera den inbyggda valideringen
         med egenbyggda felmeddelanden.
@@ -46,8 +46,8 @@ export default function LinkItemText() {
         skärmläsare eller användare med nedsatt färgseende kommer uppfatta detta.
       </p>
       <p>
-        Förutom felmeddelanden är det också viktigt att tydligt visa användaren när saker går som förväntat. Som t.ex.
-        återkoppling på att data har blivit mottaget av hemsidan.
+        Förutom felmeddelanden är det också viktigt att tydligt visa användaren när saker går som förväntat. Som till
+        exempel återkoppling på att data har blivit mottaget av hemsidan.
       </p>
       <p className={styles.sourceParagraph}>
         Källa:{""}
