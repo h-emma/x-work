@@ -71,12 +71,7 @@ export default function DropdownItem(itemList) {
   };
 
   return (
-    <ItemCard
-      id="dropdown-item"
-      name="Dropdown"
-      text={<DropdownItemText />}
-      itemList={itemList}
-    >
+    <ItemCard id="drop-down-item" name="Drop-down" text={<DropdownItemText />} itemList={itemList}>
       <nav className={styles.navContainer}>
         <ul className={styles.parentList}>
           <li>
@@ -100,10 +95,7 @@ export default function DropdownItem(itemList) {
             >
               No Link
             </a>
-            <ul
-              ref={noLinkList}
-              className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}
-            >
+            <ul ref={noLinkList} className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a
                   href="#"
@@ -140,16 +132,10 @@ export default function DropdownItem(itemList) {
             >
               Link
             </a>
-            <button
-              className={styles.openMenuButton}
-              onClick={toggleLinkTabIsOpen}
-            >
+            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen}>
               v
             </button>
-            <ul
-              ref={linkList}
-              className={linkTabIsOpen ? styles.displayNoLinkList : ""}
-            >
+            <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a
                   href="#"

@@ -42,13 +42,13 @@ const StartSection = react.forwardRef((props, ref) => {
           </li>
           <li>
             <Link
-              href="#dropdown-item"
+              href="#drop-down-item"
               scroll={false}
               onClick={() => {
-                document.getElementById("dropdown-item").focus();
+                document.getElementById("drop-down-item").focus();
               }}
             >
-              Dropdown
+              Drop-down
             </Link>
           </li>
           <li>
