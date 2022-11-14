@@ -40,10 +40,10 @@ export default function PseudoClassItemText() {
       </p>
       <p>
         Idag finns :focus inbyggt i våra webbläsare. Dessa ska vi dock inte
-        förlista oss på då en del inte är anpassade för tillexempel dark mode
-        som i sin tur gör dem svåra att se. Stylningen av :focus är viktig att
-        den är tydlig då en användare inte kan förutse vart den kan integrera
-        med på en hemsida.{" "}
+        förlita oss på då en del inte är anpassade för tillexempel dark mode som
+        i sin tur gör dem svåra att se. Stylningen av :focus är viktig att den
+        är tydlig då en användare inte kan förutse vart den kan integrera med på
+        en hemsida.{" "}
       </p>
       <p>
         En viktig aspekt vid styling av :focus är att inte ta bort outline,
@@ -56,7 +56,7 @@ export default function PseudoClassItemText() {
       <p>
         {" "}
         :active används när ett element aktiveras, tillexempel en knapp som blir
-        klickad. Men en mus är det när mellan att klicket görs tills det släpps
+        klickad. Med en mus är det när mellan att klicket görs tills det släpps
         och på ett tangentbord är det när mellan enter trycks ner tills den
         släpps. Detta för att informera användaren om att integreringen
         aktiverades.
