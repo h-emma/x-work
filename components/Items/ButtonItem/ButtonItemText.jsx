@@ -4,15 +4,15 @@ export default function ButtonItemText() {
     <>
       <p>
         Det finns tre typer av knappar, submit, reset och button. En submit
-        skickar den aktuella datan vilket även är elementet Button standardläge.
-        Reset återställer den aktuella datan och typen button måste kontrolleras
-        med hjälp av javascript, tillexempel med ett onClick. Anledningen till
-        att standardläget för elementet är submit beror på att från början
-        användes främst i formulär. Idag används elementet i större utsträckning
-        och har inte alltid en submit funktion, där av är det till fördel att
-        deklarera vilken typ av knapp det är, type=”button”. Då olika webbläsare
-        använder olika standarder av styling för de olika typerna av elementet
-        ger deklaration av typ en fördel i det anseendet.
+        skickar den aktuella datan vilket även är elementet Buttons
+        standardläge. Reset återställer den aktuella datan och typen button
+        måste kontrolleras med hjälp av javascript, tillexempel med ett onClick.
+        Anledningen till att standardläget för elementet är submit beror på att
+        det från början främst användes i formulär. Idag används elementet i en
+        bredare utsträckning och har inte alltid en submit funktion. Därav är
+        det till fördel att deklarera vilken typ av knapp det är, type=”button”.
+        Då olika webbläsare använder olika standarder av styling för de olika
+        typerna av elementet ger deklaration av typ en fördel i det anseendet.
       </p>
       <p className={styles.sourceParagraph}>
         Källa:{""}
@@ -26,14 +26,14 @@ export default function ButtonItemText() {
           https://www.w3schools.com/tags/att_button_type.asp
         </a>
       </p>
-      <h4>Buttons innehåller ikoner</h4>
+      <h4>Button innehåller ikoner</h4>
       <p>
         En del knappar består enbart av en ikon och saknar då ett namn vilket
         gör att en skärmläsare inte kan förmedla knappens innehåll eller
         funktion till användaren. För att tydliggöra knappens innehåll eller
         funktion för en användare läggs name=”” till inne i knappen. Men det kan
-        också vara en idé att låta en text finnas också, inte alla användare har
-        förståelse över vad ikonen förmedlar.
+        också vara en idé att låta en text finnas tillsammans med ikonen, inte
+        alla användare har förståelse över vad ikonen förmedlar.
       </p>
       <p className={styles.sourceParagraph}>
         Källa:{""}
@@ -41,12 +41,12 @@ export default function ButtonItemText() {
           https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
         </a>
       </p>
-      <h4>Buttons storlek</h4>
+      <h4>Button storlek</h4>
       <p>
         Knappens storlek har en avgörande roll för hur tillgänglig den är.
         Rekommendationen från WCAG som ger nivå AAA är att en knapp som inte är
         aktiv är 44px gånger 44px. Det är även bra att ge utrymme mellan olika
-        knappar för att minska riken att användaren klickar fel.{" "}
+        knappar för att minska risken att användaren klickar fel.{" "}
       </p>
       <p className={styles.sourceParagraph}>
         Källa:{""}
