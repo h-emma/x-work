@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function ButtonItem() {
   return (
     <p>
-      Tillgäglighet eller accessibility som det heter på engelska är en viktig del av webbens funktion. För att kunna
-      erbjuda webben för alla behöver utveckare tänka på tillgänglighet är en utvecklar en hemsida. Men vad är det då
-      man ska tänka på? Är det krångligt och behöver man tumma på det visuella? Nedan följer en lista på vanliga
-      komponenter och hur dessa kan kodas för att oppnimera tillgängligheten. Under fliken om tillgänglighet finner ni
-      även länkar till andra sidor som har upp ämnet eller ger hjälp för att kunna bygga en så tillgänglig sida som
-      möjligt.
+      Tillgänglighet eller accessibility som det heter på engelska är en viktig del av webbens funktion. För att kunna
+      erbjuda webben för alla behöver utvecklare tänka på tillgänglighet när en utvecklar en hemsida. Men vad är det då
+      man ska tänka på? Är det krångligt eller behöver man tumma på det grafiska uttrycket? Nedan följer en lista på
+      vanliga element och komponenter och hur dessa kan kodas för att förbättra tillgängligheten. Under{" "}
+      <i>Om tillgänglighet</i> finns det mer att läsa om varför ämnet är viktigt, vad som är bra att tänka på vid
+      skapande av en tillgänglig webb samt länkar till mer information om ämnet.
     </p>
   );
 }
