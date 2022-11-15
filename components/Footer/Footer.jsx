@@ -8,12 +8,7 @@ export default function Footer() {
       <div className={styles.backgrund}>
         <div className={styles.logoContainer}>
           <Link href="/" className={"non-highlighted-text"}>
-            <Image
-              src="/assets/icons/logo.svg"
-              alt="Tillgänglighetskollen,tillbaka till hem"
-              width={75}
-              height={75}
-            />
+            <Image src="/assets/icons/logo.svg" alt="Tillgänglighetskollen,tillbaka till hem" width={75} height={75} />
           </Link>
         </div>
 
@@ -41,11 +36,7 @@ export default function Footer() {
             <div className={styles.contactContainer}>
               <p className={styles.text}>
                 Skicka ett mail till oss,
-                <a
-                  className={styles.link}
-                  href="mailto:test@test.com"
-                  target="blank"
-                >
+                <a className={styles.link} href="mailto:test@test.com" target="blank">
                   {" "}
                   test@test.com
                 </a>
@@ -59,10 +50,7 @@ export default function Footer() {
               </p>
             </div>
             <div className={styles.socialContainer}>
-              <a
-                href="https://sv-se.facebook.com/"
-                className="social-media-link"
-              >
+              <a href="https://sv-se.facebook.com/" className="social-media-link">
                 <Image
                   className={styles.socialImage}
                   src="/assets/icons/icon_facebook.svg"
@@ -71,10 +59,7 @@ export default function Footer() {
                   height={24}
                 />
               </a>
-              <a
-                href="https://www.instagram.com/"
-                className="social-media-link"
-              >
+              <a href="https://www.instagram.com/" className="social-media-link">
                 <Image
                   className={styles.socialImage}
                   src="/assets/icons/icon_instagram.svg"
@@ -87,10 +72,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyRight}>
-          <p className={styles.textCopyRight}>
-            {" "}
-            &copy; {new Date().getFullYear()} X-Work - All Rights Reserved
-          </p>
+          <p className={styles.textCopyRight}> &copy; {new Date().getFullYear()} X-Work - All Rights Reserved</p>
         </div>
       </div>
     </footer>
