@@ -4,14 +4,13 @@ import FormItemText from "./FormItemText";
 
 export default function FormItem(itemList) {
   return (
-    <ItemCard id="form-item" name="Form" text={<FormItemText />} itemList={itemList}>
-      <form
-        action=""
-        onSubmit={(e) => {
-          console.log(e);
-        }}
-        className={styles.form}
-      >
+    <ItemCard
+      id="form-item"
+      name="Form"
+      text={<FormItemText />}
+      itemList={itemList}
+    >
+      <form action="" className={styles.form}>
         <h4>Registrera dig</h4>
         <fieldset className={styles.fieldset}>
           <legend>Registreringsdetaljer</legend>
@@ -22,7 +21,13 @@ export default function FormItem(itemList) {
           </div>
           <div className={styles.inputAndLabelContainer}>
             <label htmlFor="password">Lösenord *</label>
-            <input type="password" name="password" id="password" required minLength="8" />{" "}
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minLength="8"
+            />{" "}
             <p>Lösenord måste vara minst 8 tecken.</p>
           </div>
         </fieldset>

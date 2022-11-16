@@ -18,6 +18,7 @@ import FormItem from "../components/Items/FormItem/FormItem";
 import AnimationItem from "../components/Items/AnimationItem/AnimationItem";
 import ImageItem from "../components/Items/ImageItem/ImageItem";
 import PseudoClassItem from "../components/Items/PseudoClassItem/PseudoClassItem";
+import ModalItem from "../components/Items/ModalItem/ModalItem";
 
 export default function Home() {
   const itemList = useRef(null);
@@ -60,6 +61,7 @@ export default function Home() {
           <LinkItem itemList={itemList} />
           <LinkIconItem itemList={itemList} />
           <LinkMailToItem itemList={itemList} />
+          <ModalItem itemList={itemList} />
           <ParagraphItem itemList={itemList} />
           <PseudoClassItem itemList={itemList} />
         </section>
