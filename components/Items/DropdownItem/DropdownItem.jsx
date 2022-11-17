@@ -16,16 +16,26 @@ export default function DropdownItem(itemList) {
     noLinkTab.current.addEventListener("click", (e) => {
       e.preventDefault();
     });
+    noLinkTab.current.addEventListener("mouseenter", () => {
+      noLinkTab.current.setAttribute("aria-expanded", "true");
+    });
     noLinkTab.current.addEventListener("mouseout", () => {
+      noLinkTab.current.setAttribute("aria-expanded", "false");
       setNoLinkTabIsOpen(false);
     });
+    linkTab.current.addEventListener("mouseenter", () => {
+      linkTab.current.setAttribute("aria-expanded", "true");
+    });
     linkTab.current.addEventListener("mouseout", () => {
+      linkTab.current.setAttribute("aria-expanded", "false");
       setLinkTabIsOpen(false);
     });
     const noLinkListChildren = Array.from(noLinkList.current.children);
     noLinkListChildren.map((child) => {
       let timer = null;
       child.firstChild.addEventListener("mouseenter", () => {
+        noLinkTab.current.setAttribute("aria-expanded", "true");
+        console.log(noLinkTab.current);
         setNoLinkTabIsOpen(true);
         if (timer) {
           clearTimeout(timer);
@@ -34,6 +44,7 @@ export default function DropdownItem(itemList) {
       child.firstChild.addEventListener("mouseout", () => {
         timer = setTimeout(() => {
           setNoLinkTabIsOpen(false);
+          noLinkTab.current.setAttribute("aria-expanded", "false");
         }, 1000);
       });
     });
@@ -42,7 +53,9 @@ export default function DropdownItem(itemList) {
     linkListChildren.map((child) => {
       let timer = null;
       child.firstChild.addEventListener("mouseenter", () => {
+        linkTab.current.setAttribute("aria-expanded", "true");
         setLinkTabIsOpen(true);
+
         if (timer) {
           clearTimeout(timer);
         }
@@ -50,6 +63,7 @@ export default function DropdownItem(itemList) {
       child.firstChild.addEventListener("mouseout", () => {
         timer = setTimeout(() => {
           setLinkTabIsOpen(false);
+          linkTab.current.setAttribute("aria-expanded", "false");
         }, 1000);
       });
     });
@@ -92,6 +106,7 @@ export default function DropdownItem(itemList) {
               className={styles.noLinkTab}
               style={{ textDecoration: "none" }}
               onClick={toggleNoLinkTabIsOpen}
+              aria-expanded={noLinkTabIsOpen ? "true" : "false"}
             >
               No Link
             </a>
@@ -120,7 +135,7 @@ export default function DropdownItem(itemList) {
               </li>
             </ul>
           </li>
-          <li>
+          <li className={styles.withButtonLiElement}>
             <a
               href="#"
               ref={linkTab}
@@ -129,12 +144,11 @@ export default function DropdownItem(itemList) {
                 alert("You clicked a link.");
               }}
               className={styles.withButtonTab}
+              aria-expanded={linkTabIsOpen ? "true" : "false"}
             >
               Link
             </a>
-            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen}>
-              v
-            </button>
+            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen} name="öppna meny"></button>
             <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a

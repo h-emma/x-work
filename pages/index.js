@@ -37,13 +37,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.startSectionContainer}>
           <StartSection ref={itemList} />
-          <Image
-            src={LogoBG}
-            alt={""}
-            className={styles.logoBG}
-            loading="eager"
-            priority={true}
-          ></Image>
+          <Image src={LogoBG} alt={""} className={styles.logoBG} loading="eager" priority={true}></Image>
         </section>
 
         <div className={styles.itemsHeaderContainer}>

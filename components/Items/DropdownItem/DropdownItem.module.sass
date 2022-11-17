@@ -28,6 +28,9 @@
         color: white
         text-decoration: underline
 
+    button
+        
+
 .parentList
     display: flex
     flex-direction: row
@@ -53,14 +56,26 @@
     display: block !important
 
 
+
 .withButtonTab
-    width: 80px
+    padding-right: 44px !important
+    
 
 .openMenuButton
     position: absolute
+    z-index: 2
+    right: 10px
     top: 50%
-    right: 12px
-    transform: translate(0, -50%)
-    z-index: 3
+    transform: translateY(-50%)
+    border: none
+    background-image: url('../../../public/assets/icons/arrow-down.svg')
+    background-size: 60% 60%
+    background-position: 50% 60%
+    background-repeat: no-repeat
+    background-color: $dark-detail-color
+    border-radius: 1000px
+    padding: 12px
+    width: 18px
+    height: 18px
 
 .noLinkTab
