@@ -135,7 +135,7 @@ export default function DropdownItem(itemList) {
               </li>
             </ul>
           </li>
-          <li className={styles.withButtonLiElement}>
+          <li>
             <a
               href="#"
               ref={linkTab}
@@ -148,7 +148,12 @@ export default function DropdownItem(itemList) {
             >
               Link
             </a>
-            <button className={styles.openMenuButton} onClick={toggleLinkTabIsOpen} name="öppna meny"></button>
+            <button
+              className={styles.openMenuButton}
+              onClick={toggleLinkTabIsOpen}
+              name="öppna meny"
+              aria-label="öppna meny"
+            ></button>
             <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
               <li>
                 <a
