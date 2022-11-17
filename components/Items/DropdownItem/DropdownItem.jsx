@@ -85,7 +85,12 @@ export default function DropdownItem(itemList) {
   };
 
   return (
-    <ItemCard id="drop-down-item" name="Drop-down" text={<DropdownItemText />} itemList={itemList}>
+    <ItemCard
+      id="drop-down-item"
+      name="Drop-down"
+      text={<DropdownItemText />}
+      itemList={itemList}
+    >
       <nav className={styles.navContainer}>
         <ul className={styles.parentList}>
           <li>
@@ -93,7 +98,7 @@ export default function DropdownItem(itemList) {
               href="#"
               onClick={(e) => {
                 e.preventDefault();
-                alert("You clicked a link.");
+                alert("Du har klickat på en länk.");
               }}
             >
               No Drop-down
@@ -110,13 +115,16 @@ export default function DropdownItem(itemList) {
             >
               No Link
             </a>
-            <ul ref={noLinkList} className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}>
+            <ul
+              ref={noLinkList}
+              className={noLinkTabIsOpen ? styles.displayNoLinkList : ""}
+            >
               <li>
                 <a
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    alert("You clicked a link.");
+                    alert("Du har klickat på en länk.");
                   }}
                 >
                   Item 1
@@ -127,7 +135,7 @@ export default function DropdownItem(itemList) {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    alert("You clicked a link.");
+                    alert("Du har klickat på en länk.");
                   }}
                 >
                   Item 2
@@ -141,7 +149,7 @@ export default function DropdownItem(itemList) {
               ref={linkTab}
               onClick={(e) => {
                 e.preventDefault();
-                alert("You clicked a link.");
+                alert("Du har klickat på en länk.");
               }}
               className={styles.withButtonTab}
               aria-expanded={linkTabIsOpen ? "true" : "false"}
@@ -154,13 +162,16 @@ export default function DropdownItem(itemList) {
               name="öppna meny"
               aria-label="öppna meny"
             ></button>
-            <ul ref={linkList} className={linkTabIsOpen ? styles.displayNoLinkList : ""}>
+            <ul
+              ref={linkList}
+              className={linkTabIsOpen ? styles.displayNoLinkList : ""}
+            >
               <li>
                 <a
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    alert("You clicked a link.");
+                    alert("Du har klickat på en länk.");
                   }}
                 >
                   Item 1
@@ -171,7 +182,7 @@ export default function DropdownItem(itemList) {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    alert("You clicked a link.");
+                    alert("Du har klickat på en länk.");
                   }}
                 >
                   Item 2
