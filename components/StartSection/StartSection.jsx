@@ -133,19 +133,6 @@ const StartSection = react.forwardRef((props, ref) => {
               </li>
             </ul>
           </li>
-
-          <li>
-            <Link
-              href="#modal-item"
-              scroll={false}
-              onClick={() => {
-                document.getElementById("modal-item").focus();
-              }}
-            >
-              Modal
-            </Link>
-          </li>
-
           <li>
             <Link
               href="#paragraph-item"
