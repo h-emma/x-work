@@ -8,7 +8,7 @@ const StartSection = react.forwardRef((props, ref) => {
     <section className={styles.startSection}>
       <article className={styles.article}>
         <div className={styles.articleHeaderContainer}>
-          <h1>Tillgänglighet</h1>
+          <h1>Tillgänglighetskollen</h1>
         </div>
         <StartSectionText />
       </article>
