@@ -14,12 +14,13 @@ export default function AnimationItem(itemList) {
         </div>
         <div className={styles.buttonContainer}>
           <button
+            className={animationIsPlaying ? styles.pauseButton : styles.playButton}
             onClick={() => {
               setAnimationIsPlaying((current) => !current);
             }}
-          >
-            Spela upp/Pausa
-          </button>
+            aria-label={animationIsPlaying ? "pausa animation" : "spela upp animation"}
+            name={animationIsPlaying ? "pausa animation" : "spela upp animation"}
+          ></button>
         </div>
       </div>
     </ItemCard>
