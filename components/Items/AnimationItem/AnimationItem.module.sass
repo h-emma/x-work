@@ -9,20 +9,32 @@
 
 .buttonContainer
   display: flex
-  justify-content: center
-
-  button
-    margin-bottom: 12px
-    border: none
-    border-radius: 1000px
-    padding: 12px
-    background-color: $dark-detail-color
-    color: white
-    font-family: Poppins
+  width: 100%
+  padding-right: 12px 
+  justify-content: right
 
   button:hover
-    background-color: #484848
-    color: white
+    background-color: $dark-detail-color
+
+.pauseButton
+  margin-bottom: 12px
+  border: none
+  border-radius: 1000px
+  padding: 12px
+  border: 2px solid white
+  width: 32px
+  height: 32px
+  background-color: transparent
+  background-image: url('../../../public/assets/icons/pause-icon.svg')
+  background-size: 80%
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  font-family: Poppins
+
+.playButton
+  @extend .pauseButton
+  background-image: url('../../../public/assets/icons/play-icon.svg')
+
 
 .animationContainer
     position: relative
