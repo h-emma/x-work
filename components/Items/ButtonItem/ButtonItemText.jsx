@@ -6,13 +6,14 @@ export default function ButtonItemText() {
         Det finns tre typer av knappar, submit, reset och button. En submit
         skickar den aktuella datan vilket även är elementet Buttons
         standardläge. Reset återställer den aktuella datan och typen button
-        måste kontrolleras med hjälp av javascript, tillexempel med ett onClick.
-        Anledningen till att standardläget för elementet är submit beror på att
-        det från början främst användes i formulär. Idag används elementet i en
-        bredare utsträckning och har inte alltid en submit funktion. Därav är
-        det till fördel att deklarera vilken typ av knapp det är, type=”button”.
-        Då olika webbläsare använder olika standarder av styling för de olika
-        typerna av elementet ger deklaration av typ en fördel i det anseendet.
+        måste kontrolleras med hjälp av javascript, till exempel med ett
+        onClick. Anledningen till att standardläget för elementet är submit
+        beror på att det från början främst användes i formulär. Idag används
+        elementet i en bredare utsträckning och har inte alltid en submit
+        funktion. Därav är det till fördel att deklarera vilken typ av knapp det
+        är, type=”button”. Då olika webbläsare använder olika standarder av
+        styling för de olika typerna av elementet ger deklaration av typ en
+        fördel i det anseendet.
       </p>
       <p className={styles.sourceParagraph}>
         Källa:{""}

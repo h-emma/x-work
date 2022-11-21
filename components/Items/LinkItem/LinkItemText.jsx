@@ -14,7 +14,7 @@ export default function LinkItemText() {
         att uppmaningar som, &quot;klicka här&quot; eller &quot;läs mer&quot;
         ska undvikas. Sammanhanget av länken avgör även om det ska vara en del
         av brödtexten eller vara utanför. Det finns dock undantag till denna typ
-        av styling och det är i tillexempel i en meny där det är vedertaget att
+        av styling och det är i till exempel i en meny där det är vedertaget att
         dessa är länkar, dessa brukar dock ha en meningsfull kontext. Dessa
         tydliggörs med<a href="#pseudo-class-item">pseudoklasser</a>och går att
         läsa mer om längre ner på sidan.

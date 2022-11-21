@@ -8,10 +8,10 @@ export default function ParagrafItemText() {
         att göra mer tillgänglig för användaren är det viktigt att texten är
         tydlig samt kan läsas upp tydligt vid användning av en skärmläsare. Det
         är då viktigt att språket som hemsidan är skrivet i även är deklarerat i
-        HTML koden. Tillexempel är denna sidan skriven på svenska och där med är
-        &lt;html lang = &quot; &quot;&gt; deklarerat till sv för att den ska
+        HTML koden. Till exempel är denna sidan skriven på svenska och där med
+        är &lt;html lang = &quot; &quot;&gt; deklarerat till sv för att den ska
         läsas upp på svenska. De är även viktigt att skriva tydligt, lättläst
-        och undvika tillexempel att skriva 3-5, utan i stället skriva ut det, 3
+        och undvika till exempel att skriva 3-5, utan i stället skriva ut det, 3
         till 5 då en del skärmläsare har svårt att läsa ut det första exemplet
         med bindestreck.
       </p>

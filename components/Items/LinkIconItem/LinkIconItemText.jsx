@@ -3,7 +3,7 @@ export default function LinkItemText() {
   return (
     <>
       <p>
-        Iconer som länkar använts flitigt tillexempel för Instagram och
+        Iconer som länkar använts flitigt till exempel för Instagram och
         Facebook. För användare med skärmläsare behöver dessa tydliggöras, både
         vad det föreställer men också vart personen blir omdirigerad till. Sätt
         att göra det på är att länga till texten Instagram till ikonen, låta

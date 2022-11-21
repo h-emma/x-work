@@ -26,7 +26,7 @@ const StartSection = react.forwardRef((props, ref) => {
                 document.getElementById("animation-item").focus();
               }}
             >
-              Animationer
+              Animation
             </Link>
           </li>
           <li>

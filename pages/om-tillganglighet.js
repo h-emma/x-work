@@ -33,7 +33,7 @@ export default function AboutAccessibility() {
           Tillgänglighet ökar möjligten för fler människor att använda webben
           och ta del av dess information. Hos många är första tanken att
           tillgänglighet på webben enbart är till för användare med en permanent
-          funktionsnedsättning, tillexempel en synnersättning eller kognitiv
+          funktionsnedsättning, till exempel en synnersättning eller kognitiv
           nedsättning. Men det kan även handla om en sekundär
           funktionsnedsättning som en ammande mamma, en bruten arm eller ett
           långsamt nätverk. Det handlar om att alla användare har olika behov
@@ -65,7 +65,7 @@ export default function AboutAccessibility() {
         <h2>Skapandet av en tillgänglig webb</h2>
         <p>
           För att förstå hur andra använder webben måste vi tänka bort oss
-          själva och utgå från användaren. Det kan vara svårt att gör det men
+          själva och utgå från användaren. Det kan vara svårt att göra det men
           det finns hjälpmedel.{""}
           <a href="https://www.w3.org/">World Wide Web Consortium</a>(W3C) har
           tagit fram rekommendationer för att göra webben tillgänglig,{""}
@@ -76,8 +76,8 @@ export default function AboutAccessibility() {
           hanterbara, begripliga och robusta. Principerna är sedan indelade i
           tre olika nivåer, A, AA och AAA. I EU är det A+AA som är lagkrav men
           målsättningen vid skapande av en hemsida ska vara nivå AAA. Dessa
-          riktlinjer är finns tillgängliga på webben och ska underlätta att
-          skapa en webb för alla.
+          riktlinjer finns tillgängliga på webben och ska underlätta att skapa
+          en webb för alla.
         </p>
         <p>
           Vid skapandet av en hemsida finns en del parametrar hos användare att
@@ -107,7 +107,7 @@ export default function AboutAccessibility() {
             listan kan göras lång. Dessa användare har svårigheter med att ta
             tills sig information på hemsidor och behöver lättlästa texter,
             tydliga texter, en konsekvent layout, tydlighet i hur de ska
-            integrera med innehållet. Att Att designa utefter{""}
+            integrera med innehållet. Att designa utefter{""}
             <a href="https://www.w3.org/WAI/tips/designing/">
               WCAGs riktlinjer
             </a>
@@ -152,7 +152,7 @@ export default function AboutAccessibility() {
         </p>
         <h3>WAVE</h3>
         <p>
-          Wave är ett verktyg skapat av WebAIM och UtahState University. Det
+          Wave är ett verktyg skapat av WebAIM och Utah State University. Det
           används för att kontrollera en hemsidans tillgänglighet. Användaren
           kan antingen använda tjänsten genom att skriva URLen på Waves hemsida
           eller använda deras pluggin i Chrome eller FireFox. Används plugginet
@@ -191,11 +191,10 @@ export default function AboutAccessibility() {
         <h2>Sverige och lagkrav</h2>
         <p>
           I en del länder är det lag på tillgänglighet av hemsidor. I Sverige
-          finns det lagkrav att hemsidor av offentliga aktörer så som bland
-          annat kommuner, offentligt styrda organ samt privata aktörer inom
-          skola och sjukvård. Genom att uppfylla den europeiska standarder EN
-          301 549 V.3.2.1 som bygger på WCAG 2.1 kan dessa lagkrav levas upp
-          till.
+          gäller lagkravet hemsidor av offentliga aktörer så som bland annat
+          kommuner, offentligt styrda organ samt privata aktörer inom skola och
+          sjukvård. Genom att uppfylla den europeiska standarder EN 301 549
+          V.3.2.1 som bygger på WCAG 2.1 kan dessa lagkrav levas upp till.
         </p>
         <p>
           Källa:{""}

@@ -6,13 +6,13 @@ export default function PseudoClassItemText() {
         Användare kan integrerar en del på hemsidor, det kan vara med en knapp,
         en länk eller ett formulär. För att det ska bli tydligt för användaren
         att den kan integrera finns en del tillvägagångssätt, ett är att använda
-        sig av pseudo-klasserna :hover, :fokus och :active. Dessa skapar även en
+        sig av pseudo-klasserna :hover, :focus och :active. Dessa skapar även en
         mer tillgänglig webb.
       </p>
       <p>
         Pseudo-klasserna standardläge beter sig och ser lite olika ut beroende
         på vilken typ av skärm samt webbläsare användare använder. När dessa
-        stylas ska riktlinjer om tillexempel färgkontrast tas med.
+        stylas ska riktlinjer om till exempel färgkontrast tas med.
       </p>
       <p>
         Det är viktigt att styla pseudo-klasserna i ordning för att de ska
@@ -22,10 +22,10 @@ export default function PseudoClassItemText() {
       <p>
         {" "}
         :hover stylingen blir synlig först när användaren för musen över
-        elementet, tillexempel en knapp, den ändrar då utseende som indikerar på
-        att användaren kan integrera med elementet. Användaren behöver inte
+        elementet, till exempel en knapp, den ändrar då utseende som indikerar
+        på att användaren kan integrera med elementet. Användaren behöver inte
         aktivera elementet utan får information om att den kan integrerar med
-        tillexempel knappen. Denna funktion fungerar endast med mus.{" "}
+        till exempel knappen. Denna funktion fungerar endast med mus.{" "}
       </p>
       <h4> :focus</h4>
       <p>
@@ -40,10 +40,10 @@ export default function PseudoClassItemText() {
       </p>
       <p>
         Idag finns :focus inbyggt i våra webbläsare. Dessa ska vi dock inte
-        förlita oss på då en del inte är anpassade för tillexempel dark mode som
-        i sin tur gör dem svåra att se. Stylningen av :focus är viktig att den
-        är tydlig då en användare inte kan förutse vart den kan integrera med på
-        en hemsida.{" "}
+        förlita oss på då en del inte är anpassade för till exempel dark mode
+        som i sin tur gör dem svåra att se. Stylningen av :focus är viktig att
+        den är tydlig då en användare inte kan förutse vart den kan integrera
+        med på en hemsida.{" "}
       </p>
       <p>
         En viktig aspekt vid styling av :focus är att inte ta bort outline,
@@ -55,10 +55,10 @@ export default function PseudoClassItemText() {
       <h4> :active</h4>
       <p>
         {" "}
-        :active används när ett element aktiveras, tillexempel en knapp som blir
-        klickad. Med en mus är det när mellan att klicket görs tills det släpps
-        och på ett tangentbord är det när mellan enter trycks ner tills den
-        släpps. Detta för att informera användaren om att integreringen
+        :active används när ett element aktiveras, till exempel en knapp som
+        blir klickad. Med en mus är det när mellan att klicket görs tills det
+        släpps och på ett tangentbord är det när mellan enter trycks ner tills
+        den släpps. Detta för att informera användaren om att integreringen
         aktiverades.
       </p>
       <p className={styles.sourceParagraph}>
